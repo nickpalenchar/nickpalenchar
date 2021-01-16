@@ -1,0 +1,17 @@
+baseURL = "https://nickpalenchar.com/"
+languageCode = "en-us"
+title = "Nick Palenchar"
+theme = "m10c"
+sectionPagesMenu = "main"
+publishDir = "docs/"
+
+[params.style]
+  darkestColor = "#d35050"
+  darkColor = "#212121"
+  lightColor = "#f5e3e0"
+  lightestColor = "#f5f5f5"
+  primaryColor = "#fff"
+
+[permalinks]
+  posts = "/:filename"
+
