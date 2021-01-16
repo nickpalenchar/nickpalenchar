@@ -1,5 +1,5 @@
 ---
-title: "Imposter Syndrome"
+title: "A Proactive Approach to Impostor Syndrome"
 date: 2018-01-19T10:01:12-05:00
 tags: ["personal development", "imposter syndrome", "motivation"]
 aliases:
