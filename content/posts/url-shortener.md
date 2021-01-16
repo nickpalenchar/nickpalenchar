@@ -1,6 +1,7 @@
 ---
 title: "An interviewer once asked me how I would build a url-shortener app. After discussion, I decided to actually do it. Here's what I designed (and how you can contribute to the Open Source project)"
 date: 2018-03-31T10:22:20-05:00
+tags: ["tutorial", "interview prep"]
 ---
 About a year back I had an on-site interview at a very large finance company. I spent the day meeting engineers from every department, and was asked to whiteboard solutions to many problems. Some were very mathmatical algorithms, others were architectures for things like microservices and AWS. Among the questions, my favorite was making a URL shortener, similar to bit.ly.
 

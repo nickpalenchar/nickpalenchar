@@ -1,6 +1,7 @@
 ---
 title: "Consider Less Anonymous Functions"
 date: 2018-04-29T10:26:24-05:00
+tags: ["javascript", "coding style"]
 ---
 This post is about coding style. What is coding style? It's a conscious choice in the way the author writes code where such writing is justified by what the author is trying to express. It is not a "best practice", nor is it appropriate in all situations. But it's great for reflection. Recently I've been thinking about anonymous functions (specifically in JavaScript), and what happens when I use them less often.
 

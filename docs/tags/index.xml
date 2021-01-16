@@ -1,10 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Thoughts on programming in the Tech Industry.</title>
+    <title>Tags on Nick Palenchar 👨‍💻</title>
     <link>https://nickpalenchar.com/tags/</link>
-    <description>Recent content in Tags on Thoughts on programming in the Tech Industry.</description>
+    <description>Recent content in Tags on Nick Palenchar 👨‍💻</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://nickpalenchar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 May 2018 10:28:33 -0500</lastBuildDate><atom:link href="https://nickpalenchar.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://nickpalenchar.com/tags/git/</link>
+      <pubDate>Sun, 27 May 2018 10:28:33 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coding style</title>
+      <link>https://nickpalenchar.com/tags/coding-style/</link>
+      <pubDate>Sun, 29 Apr 2018 10:26:24 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/coding-style/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://nickpalenchar.com/tags/javascript/</link>
+      <pubDate>Sun, 29 Apr 2018 10:26:24 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interview prep</title>
+      <link>https://nickpalenchar.com/tags/interview-prep/</link>
+      <pubDate>Sat, 31 Mar 2018 10:22:20 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/interview-prep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://nickpalenchar.com/tags/tutorial/</link>
+      <pubDate>Sat, 31 Mar 2018 10:22:20 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://nickpalenchar.com/tags/nodejs/</link>
+      <pubDate>Wed, 28 Feb 2018 10:17:31 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>imposter syndrome</title>
+      <link>https://nickpalenchar.com/tags/imposter-syndrome/</link>
+      <pubDate>Fri, 19 Jan 2018 10:01:12 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/imposter-syndrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>motivation</title>
+      <link>https://nickpalenchar.com/tags/motivation/</link>
+      <pubDate>Fri, 19 Jan 2018 10:01:12 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/motivation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal development</title>
+      <link>https://nickpalenchar.com/tags/personal-development/</link>
+      <pubDate>Fri, 19 Jan 2018 10:01:12 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/personal-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opinion</title>
+      <link>https://nickpalenchar.com/tags/opinion/</link>
+      <pubDate>Sat, 14 May 2016 10:33:31 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech industry</title>
+      <link>https://nickpalenchar.com/tags/tech-industry/</link>
+      <pubDate>Sat, 14 May 2016 10:33:31 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/tags/tech-industry/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Thoughts on programming in the Tech Industry.</title>
+    <title>Posts on Nick Palenchar 👨‍💻</title>
     <link>https://nickpalenchar.com/posts/</link>
-    <description>Recent content in Posts on Thoughts on programming in the Tech Industry.</description>
+    <description>Recent content in Posts on Nick Palenchar 👨‍💻</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Apr 2018 10:26:24 -0500</lastBuildDate><atom:link href="https://nickpalenchar.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 May 2018 10:28:33 -0500</lastBuildDate><atom:link href="https://nickpalenchar.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life Changing Git Commands You Probably Aren&#39;t Using.</title>
+      <link>https://nickpalenchar.com/git/</link>
+      <pubDate>Sun, 27 May 2018 10:28:33 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/git/</guid>
+      <description>Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.</description>
+    </item>
+    
     <item>
       <title>Consider Less Anonymous Functions</title>
       <link>https://nickpalenchar.com/anonymous-functions/</link>

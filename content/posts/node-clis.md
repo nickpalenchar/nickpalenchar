@@ -1,6 +1,7 @@
 ---
 title: "The 7 Habits of Highly Effective Node Clis"
 date: 2018-02-28T10:17:31-05:00
+tags: ["javascript", "nodejs"]
 aliases:
   - articles/the-7-habits-of-highly-effective-node-clis
 ---

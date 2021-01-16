@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Life Changing Git Commands You Probably Aren&#39;t Using. // Nick Palenchar 👨‍💻</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://nickpalenchar.com/css/main.min.4ecfaf0fad326fd2372656e8f93c8e08fdf9cc68303b415113906ec014c50acd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Life Changing Git Commands You Probably Aren&#39;t Using."/>
+<meta name="twitter:description" content="Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready."/>
+
+    <meta property="og:title" content="Life Changing Git Commands You Probably Aren&#39;t Using." />
+<meta property="og:description" content="Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nickpalenchar.com/git/" />
+<meta property="article:published_time" content="2018-05-27T10:28:33-05:00" />
+<meta property="article:modified_time" content="2018-05-27T10:28:33-05:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://nickpalenchar.com/"><img class="app-header-avatar" src="/profile.png" alt="John Doe" /></a>
+      <h1>Nick Palenchar 👨‍💻</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>Thoughts on programming and the Tech Industry (and maybe other ramblings)</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/nickpalenchar" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://linkedin.com/in/nickpalenchar" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/palencharizard" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Life Changing Git Commands You Probably Aren&#39;t Using.</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 27, 2018
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          6 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+              <a class="tag" href="https://nickpalenchar.com/tags/git/">git</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.</p>
+<h2 id="enter-git">Enter <code>git</code></h2>
+<p>If you or your company uses GitHub, you&rsquo;re probably very familiar with git. Depending on how well you can wrangle the CLI, git can be amazingly useful or incredibly infuriating. And like everyone else using git, I&rsquo;ve ran into numerous problems and found my own various ways out of them. As my experience grew I began to keep a log of &ldquo;git solutions&rdquo;, which in turn revealed a few useful commands I commonly employ. While simple, they&rsquo;ve come in handy time and again. Maybe they&rsquo;ll come in handy for you as well!</p>
+<p>I call these commands &ldquo;life-changing&rdquo; because they are so simple yet pretty unknown. But most importantly, after adopting them you will probably find notable differences in your workflow. You&rsquo;ll (hopefully) spend less time on git and more time on what matters&ndash;pushing that code!</p>
+<h3 id="git-remote--v"><code>git remote -v</code></h3>
+<p>The <code>-v</code> option stands for &ldquo;verbose&rdquo;. Many people use <code>git remote</code> to verify a remote (usually named <code>origin</code>) was added to a repo. Fine for that single case, but we don&rsquo;t get much more information. Especially since most repos have only one remote, frequently with the same <code>origin</code> name. If you want a bit more info, <code>-v</code> gives you the URL to which those generic <code>origin</code> remotes are actually pointing too. I like to think of it as knowing what the value of a variable is in a certain instance, which is often helpful in debugging situations.</p>
+<p><strong>Why it&rsquo;s life-changing:</strong> Ever have a directory you <em>think</em> linked to a certain remote repo but wasn&rsquo;t sure? A directory holding a git project does not have to have the same name as the repo on, say, GitHub, so it could be a similar or vastly outdated repo. Out of caution, some developers might just delete the directory and re-clone the repo, ensuring it is the project they want. But <code>git remote -v</code> can validate the remote repo in one step. Observe this sample output:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ git remote -v
+origin  https://github.com/nickpalenchar/nickpalenchar.git <span style="color:#f92672">(</span>fetch<span style="color:#f92672">)</span>
+origin  https://github.com/nickpalenchar/nickpalenchar.git <span style="color:#f92672">(</span>push<span style="color:#f92672">)</span>
+</code></pre></div><p>The location of where I ran this command is a repo that is linked to my <code>nickpalenchar</code> repository under my username (<code>nickpalenchar</code>). No recloning needed!</p>
+<h3 id="git-commit---allow-empty--m-your-message"><code>git commit --allow-empty -m 'your message...'</code></h3>
+<p>Generally, when you try to commit when nothing is staged for doing so, you&rsquo;ll get a <code>nothing to commit, working tree clean</code> response, with no commit made. The <code>--allow-empty</code> flag bypasses this saftey check, allowing (you guessed it) an empty commit. So even when nothing is staged or changed, a commit will be written to the git log.</p>
+<p><strong>Why it&rsquo;s life-changing:</strong> (I love showing off this one.) There are lots of situations where you need to test doing something with a new commit in order to verify some sort of workflow. A common scenario in my work is verifying a webhook in Continuous Integration will pick up a newly pushed branch. I <em>could</em> <code>touch yet_another_new_file</code>, then add it, <em>then</em> commit it. Or I could <code>git commit --allow-empty -m 'empty commit for debugging'</code> and push that. So convenient. Just one word of warning: you probably don&rsquo;t want this in a more formal codebase; but it&rsquo;s great for a prototyping/testing repo that you will dispose of.</p>
+<h3 id="git-stash--git-stash-pop"><code>git stash</code> / <code>git stash pop</code></h3>
+<p>Admittedly a little more well-known, but if you <em>weren&rsquo;t</em> aware of <code>stash</code>, I&rsquo;m glad I can take this opportunity to enlighten you. <code>git stash</code> sets all your working changes aside (on a stack) and gives you a clean working directory. You can git stash multiple times, and the most recent stash will be at the top if the stack that git has been adding them too. As it goes with stacks, <code>git stash pop</code> will pop the top-most set of working changes and add them back to the branch you&rsquo;re currently on, ready to be modified or committed.</p>
+<p><strong>Why it&rsquo;s life-changing:</strong> The most common use for a quick <code>git stash</code>/<code>git stash pop</code> is to move the working changes you&rsquo;ve made from one branch to another. Say you&rsquo;ve started working on some changes, only to realize you&rsquo;re on the <code>master</code> branch! Depending on your repo setup (and if you&rsquo;re in a team), you probably can&rsquo;t push changes from your master branch. You&rsquo;re stuck! This is the classic opportunity for the stash command. Simply <code>git stash</code> to set those changes aside, restoring your master branch to good-standing cleanness. Then <code>git checkout</code> the branch you intended to use and <code>git stash pop</code>. All your new work has been seamlessly moved from one branch to another!</p>
+<h3 id="git-rm---cached"><code>git rm --cached</code></h3>
+<p>Another one that&rsquo;s a bit well known, but not known enough in my opinion (or I wouldn&rsquo;t still be removing files that were considered removed). <code>git rm</code> can remove a file that has previously been committed, but adding <code>--cached</code> will better ensure it does not come back.</p>
+<p><strong>Why it&rsquo;s life-changing:</strong> It&rsquo;s life changing when trying to update a <code>.gitingore</code> file. Life gets tough when you <code>git add .</code> and commit before you remember to add a certain file to a <code>.gitignore</code>. Now you have a file tracked that you did not want. To fix this problem in a fool-proof way, you can <code>git rm --cached name_of_file</code> (for directory use <code>git rm --cached -r name_of_dir</code>), add the file to <code>.gitignore</code> and commit all changes. You won&rsquo;t find that file ever showing up in that repo&rsquo;s tracking again. Another word of caution: this is NOT a solution for removing secrets that were accidentally committed, as they will still exist in the git log! But for something like say, removing <code>node_modules</code>, this would be the perfect solution.</p>
+<h3 id="bonus-git-auto-complete">Bonus: git auto-complete</h3>
+<p>Not an actual command but I had to include as it&rsquo;s probably the biggest life-changing thing you can do with git! Git autocomplete will save you a <em>LOT</em> of time (both in typing and fixing typos). Once set up, you&rsquo;ll be able to start typing a few characters of a name, then tab to auto-complete or see all possibilities of the current name fragment. It can autocomplete names of git subcommands, remotes, and branches. You can find steps to set this up <a href="http://code-worrier.com/blog/autocomplete-git/">here</a> or here in <a href="https://github.com/nickpalenchar/swanked-out-bash">my bash profile</a>.</p>
+<p>I love these commands. They&rsquo;ve solved common problems quickly, and  have largley improved my overall git competency. Do you have any git commands/tricks you&rsquo;ve found to be time-saving? fool-proofing? life-changing!? I&rsquo;d love for you to share your common git commands in the comments. Thanks for reading!</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

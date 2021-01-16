@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opinion on Nick Palenchar 👨‍💻</title>
+    <link>https://nickpalenchar.com/tags/opinion/</link>
+    <description>Recent content in opinion on Nick Palenchar 👨‍💻</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 May 2016 10:33:31 -0500</lastBuildDate><atom:link href="https://nickpalenchar.com/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Please Maybe Learn to Code</title>
+      <link>https://nickpalenchar.com/please-maybe-learn-to-code/</link>
+      <pubDate>Sat, 14 May 2016 10:33:31 -0500</pubDate>
+      
+      <guid>https://nickpalenchar.com/please-maybe-learn-to-code/</guid>
+      <description>Please don’t learn to code. Please do learn to code. This past week, a blogospheric angel and devil has emerged on both sides of my shoulders after the latest and greatest installment of opinions manifested on the internet.
+I read the Tech Crunch article. I read the FreeCodeCamp article. For good measure, I also read the Coding Horror article mentioned by the FreeCodeCamp article. My reaction? They all have valid points and are all worth reading.</description>
+    </item>
+    
+  </channel>
+</rss>

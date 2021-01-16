@@ -1,6 +1,7 @@
 ---
 title: "Please Maybe Learn to Code"
 date: 2016-05-14T10:33:31-05:00
+tags: ["opinion", "tech industry"]
 aliases: 
  - /articles/please-maybe-learn-to-code
 ---

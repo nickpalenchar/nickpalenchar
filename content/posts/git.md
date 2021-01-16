@@ -1,11 +1,9 @@
 ---
 title: "Life Changing Git Commands You Probably Aren't Using."
 date: 2018-05-27T10:28:33-05:00
-draft: true
+tags: ["git"]
 ---
-title:Life-changing git Commands You Probably Aren't Using
-date:05/27/2018
-tags:git
+
 
 Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.
 
