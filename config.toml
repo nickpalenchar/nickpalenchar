@@ -5,6 +5,23 @@ theme = "m10c"
 sectionPagesMenu = "main"
 publishDir = "docs/"
 
+[params]
+description = "That DevOps Guy 🙇 passionate about building Tech with Purpose."
+avatar = "" # path to profile image
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/nickpalenchar"
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/nickpalenchar"
+
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/palencharizard"
+
+
 [params.style]
   darkestColor = "#d35050"
   darkColor = "#212121"
