@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Consider Less Anonymous Functions // Thoughts on programming in the Tech Industry.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://nickpalenchar.com/css/main.min.4ecfaf0fad326fd2372656e8f93c8e08fdf9cc68303b415113906ec014c50acd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Consider Less Anonymous Functions"/>
+<meta name="twitter:description" content="This post is about coding style. What is coding style? It&rsquo;s a conscious choice in the way the author writes code where such writing is justified by what the author is trying to express. It is not a &ldquo;best practice&rdquo;, nor is it appropriate in all situations. But it&rsquo;s great for reflection. Recently I&rsquo;ve been thinking about anonymous functions (specifically in JavaScript), and what happens when I use them less often."/>
+
+    <meta property="og:title" content="Consider Less Anonymous Functions" />
+<meta property="og:description" content="This post is about coding style. What is coding style? It&rsquo;s a conscious choice in the way the author writes code where such writing is justified by what the author is trying to express. It is not a &ldquo;best practice&rdquo;, nor is it appropriate in all situations. But it&rsquo;s great for reflection. Recently I&rsquo;ve been thinking about anonymous functions (specifically in JavaScript), and what happens when I use them less often." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nickpalenchar.com/anonymous-functions/" />
+<meta property="article:published_time" content="2018-04-29T10:26:24-05:00" />
+<meta property="article:modified_time" content="2018-04-29T10:26:24-05:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://nickpalenchar.com/"><img class="app-header-avatar" src="/profile.png" alt="John Doe" /></a>
+      <h1>Thoughts on programming in the Tech Industry.</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+      </nav>
+      <p>That DevOps Guy 🙇 passionate about building Tech with Purpose.</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/nickpalenchar" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://linkedin.com/in/nickpalenchar" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/palencharizard" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Consider Less Anonymous Functions</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Apr 29, 2018
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>This post is about coding style. What is coding style? It&rsquo;s a conscious choice in the way the author writes code where such writing is justified by what the author is trying to express. It is not a &ldquo;best practice&rdquo;, nor is it appropriate in all situations. But it&rsquo;s great for reflection. Recently I&rsquo;ve been thinking about anonymous functions (specifically in JavaScript), and what happens when I use them less often.</p>
+<p>Anonymous functions are a great feature in JavaScript (especially with the dawn of Arrow Functions), however there are some nice advantages when you use them less. Here are the ones I&rsquo;ve noted:</p>
+<h2 id="functions-are-decoupled-from-the-processes-that-use-them">Functions are decoupled from the processes that use them.</h2>
+<p>By design, anonymous functions can only be used once (in their Function Declaration syntax). So it follows that the function body is written wherever it&rsquo;s used. We see this a lot in higher order array methods and other functional programing styles:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">recordsAfter2000</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">records</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">record</span>, <span style="color:#a6e22e">i</span>) =&gt; {
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>) {
+    <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>;
+    <span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>;
+  }
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>) {
+    <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>;
+    <span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>;
+  }
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">record</span>;
+})
+  .<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">record</span>) =&gt; <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2000</span>);
+
+</code></pre></div><p>This might take some time to understand, especially if you&rsquo;re new to programing. Refactoring is also a bit tricky, since you&rsquo;ll need to track and understand exactly where logic begins and ends.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">recordsAfter2000</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">records</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">standardizeRecords</span>)
+                       .<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">filterBefore2000</span>);
+
+<span style="color:#75715e">// more detail (if you want it!)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">standardizeRecords</span> (<span style="color:#a6e22e">record</span>) {
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>) {
+    <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>;
+    <span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>;
+  }
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>) {
+    <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>;
+    <span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>;
+  }
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">record</span>;
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">filterBefore2000</span>(<span style="color:#a6e22e">record</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2000</span>;
+}
+</code></pre></div><p>You don&rsquo;t really need to look at the actual logic of the functions, you now get that the records are standardized in <em>some sense</em> (this example theorizes two different sources of data with a release date written differently). You then know that records before 2000 are being filtered out.</p>
+<p>Yes, this is <a href="https://eloquentjavascript.net/05_higher_order.html">Higher Order Functions</a>. But using named functions as a means to decouple from a process, even if the process does only one thing, can be helpful.</p>
+<h2 id="easier-to-scale-and-reuse">Easier to scale and reuse.</h2>
+<p>You may never think you&rsquo;ll need to reuse that anonymous function from a <code>.map</code>, but how many times to requirements and architecture change? And when they do change, you&rsquo;ll need to take some time to reorient yourself with the old function, remembering where it begins and ends, and making sure you don&rsquo;t mistakingly drag out any code that isn&rsquo;t part of the function. I also enjoy the discipline that starting with a named function implies&ndash;you are starting from the assumption that the code <em>will</em> scale, and are being careful as deliberate as such.</p>
+<h2 id="easier-to-debug">Easier to debug.</h2>
+<p>This is an often forgotten point, but when a program crashes, the name of the function will be available in the stack trace. Depending on the situation, it can be very helpful to know that a program definitively crashed at a certain function. When the crash was a result of multiple functions, seeing every name of each one involved could save a lot of time where you would otherwise manually trace where the data was flowing call to call.</p>
+<blockquote>
+<p>hint: this can be used inline even if you&rsquo;re not abstracting functions, i.e. <code>something.map(function ADD_NAME(item) { /*...*/ })</code></p>
+</blockquote>
+<h2 id="usually-more-readable">(Usually) More Readable.</h2>
+<p>This can be especially helpful when working in a shared codebase. Maybe you&rsquo;ve written a function that is designed to be pure, only to have another engineer modify it to add side-effects, or even just do a secondary task which leads to confusing logic. Maybe the extra code prevents the function&rsquo;s original job in some edge cases. A named function might prevent the odd modification from ever arising. Just the name <code>filterBefore2000</code> on a function implies it should do a specific, singular task. Who knows, other engineers might think twice before modifying.</p>
+<h2 id="minimizes-indentation">Minimizes indentation</h2>
+<p>Anonymous functions are almost always inside another block of code. Sometimes, I just really like as few indentations as possible. Especially when other engineers contribute, there&rsquo;s a better chance if the entire script being well written and organized. In the example above, code is never indented more than once. Yay!</p>
+<p>I&rsquo;ve enjoyed naming more of my functions for all these reasons, as well as the general mindset doing so puts me in. There is lots of power in being very declarative with your programming. Code is more readable, and the coding is driven by intention, ensuring you&rsquo;ve thought through the process of every step needed to achieve your app&rsquo;s goals.</p>
+<p>Thanks for reading!</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
