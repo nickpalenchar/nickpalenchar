@@ -3,27 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nickpalenchar.com/tags/blogging/</loc>
+    <lastmod>2021-01-16T13:17:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nickpalenchar.com/tags/meta/</loc>
+    <lastmod>2021-01-16T13:17:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nickpalenchar.com/</loc>
+    <lastmod>2021-01-16T13:17:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nickpalenchar.com/posts/</loc>
+    <lastmod>2021-01-16T13:17:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nickpalenchar.com/tags/quick-read/</loc>
+    <lastmod>2021-01-16T13:17:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nickpalenchar.com/tags/</loc>
+    <lastmod>2021-01-16T13:17:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nickpalenchar.com/worst-blogging-advice/</loc>
+    <lastmod>2021-01-16T13:17:09-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nickpalenchar.com/tags/git/</loc>
     <lastmod>2018-05-27T10:28:33-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://nickpalenchar.com/git/</loc>
-    <lastmod>2018-05-27T10:28:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nickpalenchar.com/</loc>
-    <lastmod>2018-05-27T10:28:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nickpalenchar.com/posts/</loc>
-    <lastmod>2018-05-27T10:28:33-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nickpalenchar.com/tags/</loc>
     <lastmod>2018-05-27T10:28:33-05:00</lastmod>
   </url>
   
