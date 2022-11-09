@@ -1,0 +1,45 @@
+{{ define "load_page_assets" }}
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+
+  {{ $paginator := .Paginate $pages }}
+
+  {{ range $paginator.Pages }}
+    {{ with .Content }}{{ end }}
+    {{ $page_css := .Scratch.Get "css" }}
+    {{ with $page_css }}
+      {{ $css_list := $.Scratch.Get "css" }}
+      {{ . | merge $css_list | $.Scratch.Set "css" }}
+    {{ end }}
+    {{ $page_js := .Scratch.Get "js" }}
+    {{ with $page_js }}
+      {{ $js_list := $.Scratch.Get "js" }}
+      {{ . | merge $js_list | $.Scratch.Set "js" }}
+    {{ end }}
+  {{ end }}
+
+  {{ $paginator | .Scratch.Set "paginator" }}
+
+{{ end }}
+
+{{ define "main" }}
+
+  {{ $paginator := .Scratch.Get "paginator" }}
+
+  <h1>Hi 👋 I'm Nick</h1>
+
+  <p>I'm a human that grew up in the Arts, but a number of early learn-to-code groups such as FreeCodeCamp
+    brought me into the world of software and I've never looked back.
+  </p>
+
+  <p>I've worked at startups and large companies, and am currently at Atlassian.</p>
+  
+  <p>I'm a digital minimalist (aspiring) and equate social media to smoking.</p>
+  
+  <p>I've spent most of my life trying to figure out how best to organize my thoughts, ideas, and time. I still haven't found the best way.</p>
+
+  <p>Open source is my jam, and a free and open net is my peanut butter. Most of my projects are dedicated to ad-free software and open exchange of knowledge.</p>
+
+  <p>I also play piano!</p>
+  {{ partial "pagination.html" . }}
+
+{{ end }}
