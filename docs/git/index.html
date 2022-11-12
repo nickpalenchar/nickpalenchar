@@ -1,90 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Life Changing Git Commands You Probably Aren&#39;t Using. // Nick Palenchar 👨‍💻</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.80.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="John Doe" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="https://nickpalenchar.com/css/main.min.4ecfaf0fad326fd2372656e8f93c8e08fdf9cc68303b415113906ec014c50acd.css" />
 
+<head>
+  <meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+    <meta name="description" content="Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.">
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.80.0" />
+  <title>Life Changing Git Commands You Probably Aren&#39;t Using. | Nick Palenchar 👨‍💻</title>
+  <link rel="canonical" href="/git/">
+
+
+  
+
+
+
+
+
+
+
+
+  
     
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Life Changing Git Commands You Probably Aren&#39;t Using."/>
-<meta name="twitter:description" content="Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready."/>
-
-    <meta property="og:title" content="Life Changing Git Commands You Probably Aren&#39;t Using." />
-<meta property="og:description" content="Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://nickpalenchar.com/git/" />
-<meta property="article:published_time" content="2018-05-27T10:28:33-05:00" />
-<meta property="article:modified_time" content="2018-05-27T10:28:33-05:00" />
+  
+  
+  <link rel="stylesheet" href="/css/base.min.d0da0274f029b6f66c9d635f637be0b31dd61221cc8750e6de3fe59b88c65903.css" integrity="sha256-0NoCdPAptvZsnWNfY3vgsx3WEiHMh1Dm3j/lm4jGWQM=" crossorigin="anonymous">
 
 
-  </head>
-  <body>
-    <header class="app-header">
-      <a href="https://nickpalenchar.com/"><img class="app-header-avatar" src="/profile.png" alt="John Doe" /></a>
-      <h1>Nick Palenchar 👨‍💻</h1>
-      <nav class="app-header-menu">
-          <a class="app-header-menu-item" href="/posts/">Posts</a>
-             - 
-          
-          <a class="app-header-menu-item" href="/tags/">Tags</a>
-      </nav>
-      <p>Thoughts on programming and the Tech Industry (and maybe other ramblings)</p>
-      <div class="app-header-social">
-        
-          <a target="_blank" href="https://github.com/nickpalenchar" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
-  <title>github</title>
-  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-</svg></a>
-        
-          <a target="_blank" href="https://linkedin.com/in/nickpalenchar" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
-  <title>linkedin</title>
-  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
-</svg></a>
-        
-          <a target="_blank" href="https://twitter.com/palencharizard" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
-  <title>twitter</title>
-  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-</svg></a>
-        
-      </div>
-    </header>
-    <main class="app-container">
+
+</head>
+
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        <a class="Banner-link u-clickable" href="/">Nick Palenchar 👨‍💻</a>
+      </li>
       
-  <article class="post">
-    <header class="post-header">
-      <h1 class ="post-title">Life Changing Git Commands You Probably Aren&#39;t Using.</h1>
-      <div class="post-meta">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
-  <title>calendar</title>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
-</svg>
-          May 27, 2018
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-  <title>clock</title>
-  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-          6 min read
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
-  <title>tag</title>
-  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
-</svg>
-              <a class="tag" href="https://nickpalenchar.com/tags/git/">git</a>
-        </div>
-      </div>
-    </header>
-    <div class="post-content">
-      <p>Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.</p>
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/posts/">Posts</a>
+        </li>
+      
+        <li class="Banner-item">
+          <a class="Banner-link u-clickable" href="/tags/">Tags</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+  <article>
+    <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="/git/" rel="bookmark">Life Changing Git Commands You Probably Aren&#39;t Using.</a>
+  </h2>
+  
+    <time datetime="2018-05-27T10:28:33-05:00">27 May, 2018</time>
+  
+</header>
+    <p>Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.</p>
 <h2 id="enter-git">Enter <code>git</code></h2>
 <p>If you or your company uses GitHub, you&rsquo;re probably very familiar with git. Depending on how well you can wrangle the CLI, git can be amazingly useful or incredibly infuriating. And like everyone else using git, I&rsquo;ve ran into numerous problems and found my own various ways out of them. As my experience grew I began to keep a log of &ldquo;git solutions&rdquo;, which in turn revealed a few useful commands I commonly employ. While simple, they&rsquo;ve come in handy time and again. Maybe they&rsquo;ll come in handy for you as well!</p>
 <p>I call these commands &ldquo;life-changing&rdquo; because they are so simple yet pretty unknown. But most importantly, after adopting them you will probably find notable differences in your workflow. You&rsquo;ll (hopefully) spend less time on git and more time on what matters&ndash;pushing that code!</p>
@@ -108,12 +99,51 @@ origin  https://github.com/nickpalenchar/nickpalenchar.git <span style="color:#f
 <p>Not an actual command but I had to include as it&rsquo;s probably the biggest life-changing thing you can do with git! Git autocomplete will save you a <em>LOT</em> of time (both in typing and fixing typos). Once set up, you&rsquo;ll be able to start typing a few characters of a name, then tab to auto-complete or see all possibilities of the current name fragment. It can autocomplete names of git subcommands, remotes, and branches. You can find steps to set this up <a href="http://code-worrier.com/blog/autocomplete-git/">here</a> or here in <a href="https://github.com/nickpalenchar/swanked-out-bash">my bash profile</a>.</p>
 <p>I love these commands. They&rsquo;ve solved common problems quickly, and  have largley improved my overall git competency. Do you have any git commands/tricks you&rsquo;ve found to be time-saving? fool-proofing? life-changing!? I&rsquo;d love for you to share your common git commands in the comments. Thanks for reading!</p>
 
-    </div>
-    <div class="post-footer">
+    
+
+
+  
+
+  
+
+
+
+
+
+  <footer>
+    
       
-    </div>
+    
+      
+        <ul class="Tags">
+          
+            <li class="Tags-item u-background">
+              <a class="Tags-link u-clickable" href="/tags/git/" rel="tag">git</a>
+            </li>
+          
+        </ul>
+      
+    
+  </footer>
+
+    
+  
+
   </article>
 
-    </main>
-  </body>
+
+      </div>
+    </div>
+  </main>
+  
+  <footer class="Footer">
+    <div class="u-wrapper">
+      <div class="u-padding">
+        Except where otherwise noted, content on this site is licensed under a &#32; <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
