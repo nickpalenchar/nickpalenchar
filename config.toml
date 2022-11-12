@@ -1,18 +1,33 @@
 baseURL = "https://nickpalenchar.com/"
 languageCode = "en-us"
 title = "Nick Palenchar 👨‍💻"
-theme = "m10c"
+theme = "hugo-flex"
 sectionPagesMenu = "main"
 publishDir = "docs/"
 
+
+rss = "To subscribe to this RSS feed, copy its address and paste it into your favorite feed reader."
 [params]
 description = "Thoughts on programming and the Tech Industry (and maybe other ramblings)"
 avatar = "/profile.png" # path to profile image
+color = "#7a4e8d"
+
 
 [[menu.main]]
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
+
+[[menu.nav]]
+name = "Posts"
+url = "posts/"
+weight = 1
+
+[[menu.nav]]
+name = "Tags"
+url = "tags/"
+weight = 2
+
 
 [[params.social]]
   name = "github"
@@ -26,13 +41,6 @@ url = "/tags/"
   name = "twitter"
   url = "https://twitter.com/palencharizard"
 
-
-[params.style]
-  darkestColor = "#d35050"
-  darkColor = "#212121"
-  lightColor = "#f5e3e0"
-  lightestColor = "#f5f5f5"
-  primaryColor = "#fff"
 
 [permalinks]
   posts = "/:filename"
