@@ -10,7 +10,7 @@ My annual Drop of the best articles and other interesting things I've read in 20
 > Note: These are not necessarily things _published_ in 2022, but the things I've discovered.
 
 ## Best Articles
-- **If you only read one:** [The Elements of git](https://cuddly-octo-palm-tree.com/posts/2021-09-19-git-elements/)
+- **If you only read one:** **[The Elements of git](https://cuddly-octo-palm-tree.com/posts/2021-09-19-git-elements/)**
   - _Runner up_: [Learn the inner workings of git, not just the commands](https://developer.ibm.com/tutorials/d-learn-workings-git/)
 - [Building A JavaScript Bundler](https://cpojer.net/posts/building-a-javascript-bundler)
 - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)]

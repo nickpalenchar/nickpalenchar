@@ -16,6 +16,9 @@ I'm starting to love the idea of using static websites to organize my thoughts.
 
 ### But I'm still in control.
 
+[[ photo of 410 medium ]] - "Community Guidelines", while important, are not even close to being solved.
+I don't know why
+
 ## Static site workflow
 
 [Hugo](gohugo.io) Is my de-facto framework of choice for Static Site Generation (SSG).
