@@ -4,6 +4,10 @@ date: 2020-12-10T08:35:06-05:00
 tags: ["best sh*t of"]
 ---
 
+My annual Drop of the best articles and other interesting things I've found on the internets in 2020. Mostly Developer focused.
+
+> Note: These are not necessarily things _published_ in 2020, but the things I've discovered.
+
 ## Best Articles
 
 - **[Deploys at Slack](https://slack.engineering/deploys-at-slack/)** 
@@ -21,10 +25,12 @@ our code review lives to be easier.
 - **[https://wizardzines.com/]** Julia Evans has the coolest style, combining comic book structures with
 highly insightful technical instruction (especially around linux). A dream resource for any visual learner.
 
-## Best Course I took
+## Best Online Course
 
 - **[The Missing Semester of your CS Education](https://missing.csail.mit.edu/)** - While geared towards undergrads
 who are _about_ to go into the professional world, this course is an amazing survey of how we can best code professionally, and I recommend it to every one. Even if you've been in the field for a few years, chances are
 there's at least one new thing you'll learn from this course, probably more.
 
+## Best random highlight:
 
+> When you’re on a complex task, keep your brain at the top of its game: dump all important stuff on paper. Our brains’ working memory easily overflows with facts and ideas.

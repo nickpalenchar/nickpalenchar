@@ -5,7 +5,7 @@ tags: ["best sh*t of"]
 draft: true
 ---
 
-My annual Drop of the best articles and other interesting things I've read in 2022.
+My annual Drop of the best articles and other interesting things I've found on the internets in 2022. Mostly Developer focused.
 
 > Note: These are not necessarily things _published_ in 2022, but the things I've discovered.
 
@@ -17,7 +17,7 @@ My annual Drop of the best articles and other interesting things I've read in 20
 - [Git commands explained with Cats](https://girliemac.com/blog/2017/12/26/git-purr/)
 - [Reflections on 10,000 hrs of programming](https://matt-rickard.com/reflections-on-10-000-hours-of-programming)
 
-## Best Top Workflow Improvements
+## Best Workflow Improvements
 - Setting git diff to diff3 (thanks https://blog.nilbus.com/take-the-pain-out-of-git-conflict-resolution-use-diff3/)
 
 ## Best Tool added to my Dev Toolbox
