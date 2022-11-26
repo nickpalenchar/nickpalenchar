@@ -2,12 +2,13 @@
 title: "Life Changing Git Commands You Probably Aren't Using."
 date: 2018-05-27T10:28:33-05:00
 tags: ["git"]
+aliases: 
+  - /git
 ---
-
 
 Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.
 
-## Enter `git`
+## Figuring out `git`
 
 If you or your company uses GitHub, you're probably very familiar with git. Depending on how well you can wrangle the CLI, git can be amazingly useful or incredibly infuriating. And like everyone else using git, I've ran into numerous problems and found my own various ways out of them. As my experience grew I began to keep a log of "git solutions", which in turn revealed a few useful commands I commonly employ. While simple, they've come in handy time and again. Maybe they'll come in handy for you as well!
 

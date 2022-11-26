@@ -79,10 +79,97 @@
 </description>
     </item>
     <item>
+      <title>Best Sh*t of 2021</title>
+      <link>https://nickpalenchar.com/best-sht-of-2021/</link>
+      <pubDate>Sun, 10 Jan 2021 08:35:06 -0500</pubDate>
+      <guid>https://nickpalenchar.com/best-sht-of-2021/</guid>
+      <description>&lt;p&gt;My annual Drop of the best articles and other interesting things I&amp;rsquo;ve found on the internets in 2021. Mostly Developer focused.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: These are not necessarily things &lt;em&gt;published&lt;/em&gt; in 2021, but the things I&amp;rsquo;ve discovered.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;best-articles&#34;&gt;Best Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://dorinlazar.ro/2021-02-programming-is-hard/&#34;&gt;Programming is Hard&lt;/a&gt;&lt;/strong&gt; - Great writing on the misconception
+that &amp;ldquo;anyone&amp;rdquo; can learn to code (much better said than &lt;a href=&#34;https://nickpalenchar.com/please-maybe-learn-to-code/&#34;&gt;my own writing on the matter&lt;/a&gt;). I continue to recommend everyone thinking about learning to code take stock of the rewards as well as the challenges it involves.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://xyproblem.info/&#34;&gt;The XY Problem&lt;/a&gt;&lt;/strong&gt; - We spend lots of time as developers asking for help. Learning the best way makes your life (and your team&amp;rsquo;s) so much better and brighter.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/&#34;&gt;The Joel Test: 12 Steps to Better Code&lt;/a&gt;&lt;/strong&gt; - Simple 12 yes/no questions every new team/management should ask
+themselves when setting up a project. Also contains a few nuggets of interesting coding history.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-workflow-improvements&#34;&gt;Best Workflow Improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I learned VSCode, and started mapping out many of my own keyboard shortcuts. No articles about this (yet), sorry!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-online-course&#34;&gt;Best Online Course&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nothing turned up this year, so check out the best sh*t from &lt;a href=&#34;https://nickpalenchar.com/best-sht-of-2020#best-online-course&#34;&gt;earlier&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-cool-sht&#34;&gt;Other cool sh*t&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Best Sh*t of 2020</title>
+      <link>https://nickpalenchar.com/best-sht-of-2020/</link>
+      <pubDate>Thu, 10 Dec 2020 08:35:06 -0500</pubDate>
+      <guid>https://nickpalenchar.com/best-sht-of-2020/</guid>
+      <description>&lt;p&gt;My annual Drop of the best articles and other interesting things I&amp;rsquo;ve found on the internets in 2020. Mostly Developer focused.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: These are not necessarily things &lt;em&gt;published&lt;/em&gt; in 2020, but the things I&amp;rsquo;ve discovered.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;best-articles&#34;&gt;Best Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://slack.engineering/deploys-at-slack/&#34;&gt;Deploys at Slack&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://ashishb.net/all/the-first-two-statements-of-your-bash-script-should-be/&#34;&gt;The first two lines of your bash shell Should Be&lt;/a&gt;&lt;/strong&gt; - Or, unofficial Bash &amp;ldquo;strict mode.&amp;rdquo; Saves you from common shell headaches.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User Engagement is Code for Addiction&lt;/strong&gt; - This article unfortunately was &lt;a href=&#34;https://nickpalenchar.com/organizing-knowledge/#but-im-stil-in-control&#34;&gt;taken down by Medium&lt;/a&gt; (presumably because they employ this kind of addiction on their
+own platform)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://mtlynch.io/code-review-love/&#34;&gt;How to Make Your Code Reviewer Fall In Love With You&lt;/a&gt;&lt;/strong&gt; - We all want
+our code review lives to be easier.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://hoanhan.co/posts/2-minute-rule/&#34;&gt;The Two Minute Rule&lt;/a&gt;&lt;/strong&gt; - If you need an easy way to motivate yourself.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://mhawthorne.net/posts/2013-etsy-netflix-I-push-therefore-I-am/&#34;&gt;I Push Therefore I am: 2 Days at Etsy&lt;/a&gt;&lt;/strong&gt; - it&amp;rsquo;s fascinating to me that Netflx and Etsy once had a &amp;ldquo;developer exchange program&amp;rdquo; (seriously how did HR and compliance work?), so a story around that experience is pretty neat to see documented.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.jjude.com/sdl/&#34;&gt;Self Directed Learning&lt;/a&gt;&lt;/strong&gt; - A comprehensive framework to learning how to learn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-sites&#34;&gt;Best Sites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[https://wizardzines.com/]&lt;/strong&gt; Julia Evans has the coolest style, combining comic book structures with
+highly insightful technical instruction (especially around linux). A dream resource for any visual learner.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-online-course&#34;&gt;Best Online Course&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://missing.csail.mit.edu/&#34;&gt;The Missing Semester of your CS Education&lt;/a&gt;&lt;/strong&gt; - While geared towards undergrads
+who are &lt;em&gt;about&lt;/em&gt; to go into the professional world, this course is an amazing survey of how we can best code professionally, and I recommend it to every one. Even if you&amp;rsquo;ve been in the field for a few years, chances are
+there&amp;rsquo;s at least one new thing you&amp;rsquo;ll learn from this course, probably more.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-random-highlight&#34;&gt;Best random highlight:&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When you’re on a complex task, keep your brain at the top of its game: dump all important stuff on paper. Our brains’ working memory easily overflows with facts and ideas.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    <item>
+      <title>Best Sh*t of 2018</title>
+      <link>https://nickpalenchar.com/best-sht-of-2018/</link>
+      <pubDate>Tue, 13 Nov 2018 08:35:06 -0500</pubDate>
+      <guid>https://nickpalenchar.com/best-sht-of-2018/</guid>
+      <description>&lt;p&gt;My two favorite articles read I came across in 2018.&lt;/p&gt;
+&lt;h3 id=&#34;seven-habits-of-highly-effective-text-editinghttpswwwmoolenaarnethabitshtml&#34;&gt;&lt;a href=&#34;https://www.moolenaar.net/habits.html&#34;&gt;Seven habits of highly effective text editing&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;We spend A very large amount of time as developers typing. Unlike traditional writing, we are also constantly jumping around in files and directories, adding removing and factoring. If your set up is not optimized to do this, you could be vastly under performing in your potential.&lt;/p&gt;
+&lt;p&gt;There are lots of great articles around text editors and text editing. This is one of the first ones I ever came across that got me thinking about the craft.&lt;/p&gt;
+&lt;h3 id=&#34;hiring-religionhttpspaulenglishcomhiringhtml&#34;&gt;&lt;a href=&#34;https://paulenglish.com/hiring.html&#34;&gt;Hiring Religion&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I care deeply about her industry and how we Treat others in it, from interview into working together. This software industry is about the people who make it, and the ability to work together is crucial to productivity. This article covers how best to build and retain that team from the point where it matters most.&lt;/p&gt;
+&lt;h3 id=&#34;best-book-the-pragmatic-programmer&#34;&gt;Best Book: The Pragmatic Programmer&lt;/h3&gt;
+&lt;p&gt;Well it never really gets very technical, is classic book is great for getting you thinking more about programming
+wholistically. I found this incredibly motivating as a young programmer.&lt;/p&gt;
+&lt;h3 id=&#34;best-online-course-catalogue-linux-academy-now-acloudguruhttpsacloudgurucom&#34;&gt;Best Online Course Catalogue: Linux Academy (Now &lt;a href=&#34;https://acloudguru.com/&#34;&gt;aCloudGuru&lt;/a&gt;)&lt;/h3&gt;
+&lt;p&gt;During my tenure at New York Life Labs, linux academy was my secret weapon.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Life Changing Git Commands You Probably Aren&#39;t Using.</title>
-      <link>https://nickpalenchar.com/git/</link>
+      <link>https://nickpalenchar.com/git-commands/</link>
       <pubDate>Sun, 27 May 2018 10:28:33 -0500</pubDate>
-      <guid>https://nickpalenchar.com/git/</guid>
+      <guid>https://nickpalenchar.com/git-commands/</guid>
       <description>&lt;p&gt;Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.&lt;/p&gt;
 &lt;h2 id=&#34;enter-git&#34;&gt;Enter &lt;code&gt;git&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;If you or your company uses GitHub, you&amp;rsquo;re probably very familiar with git. Depending on how well you can wrangle the CLI, git can be amazingly useful or incredibly infuriating. And like everyone else using git, I&amp;rsquo;ve ran into numerous problems and found my own various ways out of them. As my experience grew I began to keep a log of &amp;ldquo;git solutions&amp;rdquo;, which in turn revealed a few useful commands I commonly employ. While simple, they&amp;rsquo;ve come in handy time and again. Maybe they&amp;rsquo;ll come in handy for you as well!&lt;/p&gt;
