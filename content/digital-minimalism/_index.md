@@ -16,3 +16,6 @@ draft: true
 
 - [socialcooling.com](https://www.socialcooling.com/)
 - [20 Reasons to Quit Social Media](https://durmonski.com/life-advice/reasons-to-quit-social-media/)
+
+### Other supporting documents
+- [Paul Graham - The Need to Read](http://paulgraham.com/read.html) - not exactly about "digital minimalism", but a nice argument on how tech can't replace specific analog activities (in this case reading)

@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Nick Palenchar 👨‍💻"
 theme = "hugo-flex"
 sectionPagesMenu = "main"
-
+publishDir = "docs"
 
 rss = "To subscribe to this RSS feed, copy its address and paste it into your favorite feed reader."
 [params]

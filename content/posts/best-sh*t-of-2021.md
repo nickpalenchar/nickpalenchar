@@ -21,7 +21,3 @@ themselves when setting up a project. Also contains a few nuggets of interesting
 ## Best Online Course
 
 - Nothing turned up this year, so check out the best sh*t from [earlier](/best-sht-of-2020#best-online-course)
-
-## Other cool sh*t
-
-- 

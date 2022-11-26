@@ -15,6 +15,7 @@ My annual Drop of the best articles and other interesting things I've found on t
 - [Building A JavaScript Bundler](https://cpojer.net/posts/building-a-javascript-bundler)
 - [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)]
 - [Git commands explained with Cats](https://girliemac.com/blog/2017/12/26/git-purr/)
+- [Effective Code Browsing](https://noahan.me/posts/effective-code-browsing-part1/)
 - [Reflections on 10,000 hrs of programming](https://matt-rickard.com/reflections-on-10-000-hours-of-programming)
 
 ## Best Workflow Improvements
