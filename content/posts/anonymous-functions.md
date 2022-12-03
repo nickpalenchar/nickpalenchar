@@ -11,8 +11,7 @@ Anonymous functions are a great feature in JavaScript (especially with the dawn 
 
 By design, anonymous functions can only be used once (in their Function Declaration syntax). So it follows that the function body is written wherever it's used. We see this a lot in higher order array methods and other functional programing styles:
 
-```javascript
-
+{{< highlight js >}}
 let recordsAfter2000 = records.map((record, i) => {
   if (record.rlsDate) {
     record.date = record.rlsDate;
@@ -25,8 +24,7 @@ let recordsAfter2000 = records.map((record, i) => {
   return record;
 })
   .filter((record) => record.date >= 2000);
-
-```
+{{</ highlight >}}
 
 This might take some time to understand, especially if you're new to programing. Refactoring is also a bit tricky, since you'll need to track and understand exactly where logic begins and ends.
 
