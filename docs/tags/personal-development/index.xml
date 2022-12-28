@@ -10,6 +10,80 @@
     <lastBuildDate>Fri, 19 Jan 2018 10:01:12 -0500</lastBuildDate>
     <atom:link href="https://nickpalenchar.com/tags/personal-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Best Sh*t of 2022</title>
+      <link>https://nickpalenchar.com/best-sht-of-2022/</link>
+      <pubDate>Wed, 28 Dec 2022 06:22:10 -0500</pubDate>
+      <guid>https://nickpalenchar.com/best-sht-of-2022/</guid>
+      <description>&lt;p&gt;My annual Drop of the best articles and other interesting things I&amp;rsquo;ve found on the internets in 2022. Mostly Developer focused.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: These are not necessarily things &lt;em&gt;published&lt;/em&gt; in 2022, but the things I&amp;rsquo;ve discovered.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;best-articles&#34;&gt;Best Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;If you only read one:&lt;/strong&gt; &lt;strong&gt;&lt;a href=&#34;https://cuddly-octo-palm-tree.com/posts/2021-09-19-git-elements/&#34;&gt;The Elements of git&lt;/a&gt;&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Runner up&lt;/em&gt;: &lt;a href=&#34;https://developer.ibm.com/tutorials/d-learn-workings-git/&#34;&gt;Learn the inner workings of git, not just the commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cpojer.net/posts/building-a-javascript-bundler&#34;&gt;Building A JavaScript Bundler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;&gt;How To Ask Questions The Smart Way&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://girliemac.com/blog/2017/12/26/git-purr/&#34;&gt;Git commands explained with Cats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://noahan.me/posts/effective-code-browsing-part1/&#34;&gt;Effective Code Browsing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matt-rickard.com/reflections-on-10-000-hours-of-programming&#34;&gt;Reflections on 10,000 hrs of programming&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-workflow-improvements&#34;&gt;Best Workflow Improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Setting git diff to diff3 (thanks &lt;a href=&#34;https://blog.nilbus.com/take-the-pain-out-of-git-conflict-resolution-use-diff3/&#34;&gt;https://blog.nilbus.com/take-the-pain-out-of-git-conflict-resolution-use-diff3/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-tool-added-to-my-dev-toolbox&#34;&gt;Best Tool added to my Dev Toolbox&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/jscodeshift&#34;&gt;jscodeshift&lt;/a&gt; and &lt;a href=&#34;https://astexplorer.net/&#34;&gt;astexplorer.net&lt;/a&gt;. Powerful stuff.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-online-course&#34;&gt;Best Online Course&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.executeprogram.com/courses/everyday-typescript&#34;&gt;Everyday Typescript (executeprogram)&lt;/a&gt; (paid) - one of the best
+online courses I&amp;rsquo;ve &lt;em&gt;ever&lt;/em&gt; taken. Completely demystified TypeScript, especially around the &lt;em&gt;why&lt;/em&gt; and &lt;em&gt;how to resolve&lt;/em&gt; of type errors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-cool-sht&#34;&gt;Other cool sh*t&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://freetubeapp.io/&#34;&gt;FreeTube&lt;/a&gt; is a private YouTube desktop client (I love the idea of having
+a dedicated client outside my browser tabs for YouTube in general)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Saying Sorry</title>
+      <link>https://nickpalenchar.com/saying-sorry/</link>
+      <pubDate>Sat, 10 Dec 2022 06:45:45 -0500</pubDate>
+      <guid>https://nickpalenchar.com/saying-sorry/</guid>
+      <description>&lt;p&gt;If I find myself queuing up in some line, only to be told by someone that &amp;ldquo;the line
+starts over here&amp;rdquo;, my first response is usually to say &amp;ldquo;I&amp;rsquo;m Sorry.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not going to say that anymore.&lt;/p&gt;
+&lt;p&gt;Instead I&amp;rsquo;m going to say&amp;ndash;with a similar polite and apologetic tone, mind you&amp;ndash;&amp;ldquo;My Mistake.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The reason is that, in these situations, while I mean no social disruption, I&amp;rsquo;m not actually sorry (since I didn&amp;rsquo;t know better).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Humans make mistakes.&lt;/b&gt; Mistakes are how we learn to be better people (in the same way that errors in software can point us to better optimizations). Why are we apologizing for a distinctly human trait? One we couldn&amp;rsquo;t become our best selfs without?&lt;/p&gt;
+&lt;p&gt;I encourage everyone to use &amp;ldquo;my mistake&amp;rdquo; over &amp;ldquo;I&amp;rsquo;m sorry.&amp;rdquo; Mistakes are good and we all make them.&lt;/p&gt;
+&lt;p&gt;Yes, it feels like semantics mostly, but &amp;ldquo;I&amp;rsquo;m sorry&amp;rdquo; just carries too much shame for most of us, who are already doing our best.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>The Nightmare of Reading on the Internet</title>
+      <link>https://nickpalenchar.com/reading-nightmare/</link>
+      <pubDate>Sat, 26 Nov 2022 12:55:47 -0500</pubDate>
+      <guid>https://nickpalenchar.com/reading-nightmare/</guid>
+      <description>&lt;p&gt;I came across a quote in &lt;a href=&#34;https://blog.owulveryck.info/2021/10/07/reading-from-the-web-offline-and-distraction-free.html&#34;&gt;Reading from the web offline and distraction-free&lt;/a&gt;, which was in-turn quoted from &lt;a href=&#34;https://web.archive.org/web/20150817073201/http://lab.arc90.com/2009/03/02/readability/&#34;&gt;The Readability Project&lt;/a&gt;, which I will now shamelessly
+echo in full:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reading anything on the Internet has become a full-on nightmare. As media outlets attempt to eke out as much advertising revenue as possible, we’re left trying to put blinders on to mask away all the insanity that surrounds the content we’re trying to read.&lt;/p&gt;
+&lt;p&gt;It’s almost like listening to talk radio, except the commercials play during the program in the background. It’s a pretty awful experience. Our friend to date has been the trusty “Print View” button. Click it and all the junk goes away. I click it all the time and rarely print. It’s really become the “Peace &amp;amp; Quiet” button for many.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The decline into the hyperactive &lt;a href=&#34;https://nickpalenchar.com/digital-minimalism&#34;&gt;attention economy&lt;/a&gt; was not instantaneous. Maybe that&amp;rsquo;s why
+insistent ads, pop-ups and habit trackers can feel normal and expected to many trying to do anything on the net. But
+if you&amp;rsquo;re like me it&amp;rsquo;s infuriating. The analogy of commercials in the background really hit home for me.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have much to add except that I don&amp;rsquo;t want to forget, so it&amp;rsquo;s going on my [ad- and tracking-free] site. &lt;a href=&#34;https://nickpalenchar.com/organizing-knowledge&#34;&gt;where I won&amp;rsquo;t forget it.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Finding my unclaimed property</title>
       <link>https://nickpalenchar.com/2022-05-06-escheat/</link>
       <pubDate>Fri, 06 May 2022 09:40:03 -0500</pubDate>
@@ -104,10 +178,6 @@ themselves when setting up a project. Also contains a few nuggets of interesting
 &lt;ul&gt;
 &lt;li&gt;Nothing turned up this year, so check out the best sh*t from &lt;a href=&#34;https://nickpalenchar.com/best-sht-of-2020#best-online-course&#34;&gt;earlier&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;other-cool-sht&#34;&gt;Other cool sh*t&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     <item>
@@ -172,7 +242,7 @@ wholistically. I found this incredibly motivating as a young programmer.&lt;/p&g
       <pubDate>Sun, 27 May 2018 10:28:33 -0500</pubDate>
       <guid>https://nickpalenchar.com/git-commands/</guid>
       <description>&lt;p&gt;Every developer uses some kind of version-control system (sometimes called VCS). It a fail-safe to losing work, allowing you to jump back in time and reference files as they once were. Because branching is supported, so much more than linearly stepping back in time is possible. VCS is the backbone for agile collaboration, allowing each developer to have their own copy of some codebase, where they can work at their own pace and merge changes back into a master copy when ready.&lt;/p&gt;
-&lt;h2 id=&#34;enter-git&#34;&gt;Enter &lt;code&gt;git&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;figuring-out-git&#34;&gt;Figuring out &lt;code&gt;git&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;If you or your company uses GitHub, you&amp;rsquo;re probably very familiar with git. Depending on how well you can wrangle the CLI, git can be amazingly useful or incredibly infuriating. And like everyone else using git, I&amp;rsquo;ve ran into numerous problems and found my own various ways out of them. As my experience grew I began to keep a log of &amp;ldquo;git solutions&amp;rdquo;, which in turn revealed a few useful commands I commonly employ. While simple, they&amp;rsquo;ve come in handy time and again. Maybe they&amp;rsquo;ll come in handy for you as well!&lt;/p&gt;
 &lt;p&gt;I call these commands &amp;ldquo;life-changing&amp;rdquo; because they are so simple yet pretty unknown. But most importantly, after adopting them you will probably find notable differences in your workflow. You&amp;rsquo;ll (hopefully) spend less time on git and more time on what matters&amp;ndash;pushing that code!&lt;/p&gt;
 &lt;h3 id=&#34;git-remote--v&#34;&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/h3&gt;
@@ -205,21 +275,21 @@ origin  https://github.com/nickpalenchar/nickpalenchar.git &lt;span style=&#34;c
 &lt;p&gt;Anonymous functions are a great feature in JavaScript (especially with the dawn of Arrow Functions), however there are some nice advantages when you use them less. Here are the ones I&amp;rsquo;ve noted:&lt;/p&gt;
 &lt;h2 id=&#34;functions-are-decoupled-from-the-processes-that-use-them&#34;&gt;Functions are decoupled from the processes that use them.&lt;/h2&gt;
 &lt;p&gt;By design, anonymous functions can only be used once (in their Function Declaration syntax). So it follows that the function body is written wherever it&amp;rsquo;s used. We see this a lot in higher order array methods and other functional programing styles:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;recordsAfter2000&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;records&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;) =&amp;gt; {
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;rlsDate&lt;/span&gt;) {
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;rlsDate&lt;/span&gt;;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;rlsDate&lt;/span&gt;;
+&lt;b&gt;
+let recordsAfter2000 = records.map((record, i) =&gt; {
+  if (record.rlsDate) {
+    record.date = record.rlsDate;
+    delete record.rlsDate;
   }
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;releaseDate&lt;/span&gt;) {
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;releaseDate&lt;/span&gt;;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;releaseDate&lt;/span&gt;;
+  if (record.releaseDate) {
+    record.date = record.releaseDate;
+    delete record.releaseDate;
   }
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;;
+  return record;
 })
-  .&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;record&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;);
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This might take some time to understand, especially if you&amp;rsquo;re new to programing. Refactoring is also a bit tricky, since you&amp;rsquo;ll need to track and understand exactly where logic begins and ends.&lt;/p&gt;
+  .filter((record) =&gt; record.date &gt;= 2000);
+&lt;/b&gt;
+&lt;p&gt;This might take some time to understand, especially if you&amp;rsquo;re new to programing. Refactoring is also a bit tricky, since you&amp;rsquo;ll need to track and understand exactly where logic begins and ends.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;recordsAfter2000&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;records&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;standardizeRecords&lt;/span&gt;)
                        .&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;filterBefore2000&lt;/span&gt;);
@@ -415,7 +485,7 @@ Submitting www.averylonglink.com/with/additional/routes would produce shortener.
 </description>
     </item>
     <item>
-      <title>The 7 Habits of Highly Effective Node Clis</title>
+      <title>The 7 Habits of Highly Effective Node CLIs</title>
       <link>https://nickpalenchar.com/node-clis/</link>
       <pubDate>Wed, 28 Feb 2018 10:17:31 -0500</pubDate>
       <guid>https://nickpalenchar.com/node-clis/</guid>
@@ -452,14 +522,12 @@ if (process.argv.includes(&#39;-v&#39;) {
 &lt;pre&gt;&lt;code&gt;// example using `node example.js --key=value`
 let options = {};
 
-
 process.argv.forEach( str =&amp;gt; {
     if(/=/.test(str) {
         str = str.split(&#39;=&#39;); // [&#39;--key&#39;, &#39;value&#39;]
         str[0] = str[0].replace(/^--?/, &amp;quot;&amp;quot;); // remove dashes for object (easier access)
         options[str[0]] = str[1];
 }
-
 
 console.log(options.key) //-&amp;gt; &#39;value&#39;;
 console.log(options.other) //-&amp;gt; undefined;
@@ -545,10 +613,8 @@ console.log(options.other) //-&amp;gt; undefined;
 &lt;pre&gt;&lt;code&gt;shelljs.ls(&#39;-a&#39;).stdout;
 // same as `ls -a` in bash shell
 
-
 shelljs.pwd().stdout;
 // same as `pwd` in bash shell
-
 
 let allFiles = shelljs.ls().stdout.split(&#39;\n&#39;);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sometimes, shelljs is handier than an &lt;code&gt;exec&lt;/code&gt; or another child process, as there&amp;rsquo;s no setup needed to read stdio (just remember add the &lt;code&gt;.stdout&lt;/code&gt; or other i/o name at the end of the method!). Of particular interest to me is the final example, which is an easy one-line way to get names of all files in a directory as an array of filenames.&lt;/p&gt;
@@ -582,9 +648,7 @@ let allFiles = shelljs.ls().stdout.split(&#39;\n&#39;);
 &lt;pre&gt;&lt;code&gt;const { execFile } = require(&#39;child_process&#39;);
 const path = require(&#39;path&#39;);
 
-
 let stderrs = [];
-
 
 let process = execFile(path.join(__dirname, &#39;./myFile.sh&#39;, (error, stdout, stderr) =&amp;gt; {
   if(error) {
@@ -596,7 +660,6 @@ let process = execFile(path.join(__dirname, &#39;./myFile.sh&#39;, (error, stdou
   if(stdout) {
     console.log(`[child process]: ${stdout}`);
 );
-
 
 process.on(&#39;exit&#39;, (code) =&amp;gt; {
   console.log(`process ended with exit code ${code}`);
@@ -628,13 +691,9 @@ process.on(&#39;exit&#39;, (code) =&amp;gt; {
 &lt;p&gt;In &lt;code&gt;bin/index.js&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;#!/usr/bin/env node
 
-
 let { fork } = require(&#39;child_process);
 
-
 // continue with JavaScript!
-
-
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;setting-up-to-run-your-cli-locally&#34;&gt;Setting up to run your CLI locally&lt;/h2&gt;
 &lt;p&gt;Now you are all set up to execute the binary from the shell. Finally, in a shell, &lt;code&gt;cd&lt;/code&gt; to your Node project and run &lt;code&gt;npm link&lt;/code&gt;. This will link the binaries you specified in your &lt;code&gt;package.json&lt;/code&gt; (&lt;code&gt;&amp;quot;bin&amp;quot;&lt;/code&gt;) with your &lt;code&gt;PATH&lt;/code&gt; (which is how all commands you run in the shell are found). You can now run your CLI on your computer anywhere! If you make changes in your project and save them, those changes will be immediately reflected when you run the project in the shell.&lt;/p&gt;
 &lt;p&gt;Of course, this wouldn&amp;rsquo;t be very useful if only you could run the project, so read on to publish!&lt;/p&gt;

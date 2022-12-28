@@ -1,8 +1,7 @@
 ---
 title: "Best Sh*t of 2022"
-date: 2022-12-01T06:22:10-05:00
+date: 2022-12-28T06:22:10-05:00
 tags: ["best sh*t of"]
-draft: true
 ---
 
 My annual Drop of the best articles and other interesting things I've found on the internets in 2022. Mostly Developer focused.

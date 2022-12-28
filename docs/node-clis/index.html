@@ -20,7 +20,7 @@ I love building CLI&rsquo;s, and I recommend everyone learning to code build one
 
 
 <meta name="generator" content="Hugo 0.80.0" />
-  <title>The 7 Habits of Highly Effective Node Clis | Nick Palenchar 👨‍💻</title>
+  <title>The 7 Habits of Highly Effective Node CLIs | Nick Palenchar 👨‍💻</title>
   <link rel="canonical" href="/node-clis/">
 
 
@@ -41,6 +41,9 @@ I love building CLI&rsquo;s, and I recommend everyone learning to code build one
 
 
 
+  <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
 <body>
@@ -70,7 +73,7 @@ I love building CLI&rsquo;s, and I recommend everyone learning to code build one
   <article>
     <header class="Heading">
   <h2 class="Heading-title">
-    <a class="Heading-link u-clickable" href="/node-clis/" rel="bookmark">The 7 Habits of Highly Effective Node Clis</a>
+    <a class="Heading-link u-clickable" href="/node-clis/" rel="bookmark">The 7 Habits of Highly Effective Node CLIs</a>
   </h2>
   
     <time datetime="2018-02-28T10:17:31-05:00">28 February, 2018</time>
@@ -109,14 +112,12 @@ if (process.argv.includes('-v') {
 <pre><code>// example using `node example.js --key=value`
 let options = {};
 
-
 process.argv.forEach( str =&gt; {
     if(/=/.test(str) {
         str = str.split('='); // ['--key', 'value']
         str[0] = str[0].replace(/^--?/, &quot;&quot;); // remove dashes for object (easier access)
         options[str[0]] = str[1];
 }
-
 
 console.log(options.key) //-&gt; 'value';
 console.log(options.other) //-&gt; undefined;
@@ -202,10 +203,8 @@ console.log(options.other) //-&gt; undefined;
 <pre><code>shelljs.ls('-a').stdout;
 // same as `ls -a` in bash shell
 
-
 shelljs.pwd().stdout;
 // same as `pwd` in bash shell
-
 
 let allFiles = shelljs.ls().stdout.split('\n');
 </code></pre><p>Sometimes, shelljs is handier than an <code>exec</code> or another child process, as there&rsquo;s no setup needed to read stdio (just remember add the <code>.stdout</code> or other i/o name at the end of the method!). Of particular interest to me is the final example, which is an easy one-line way to get names of all files in a directory as an array of filenames.</p>
@@ -239,9 +238,7 @@ let allFiles = shelljs.ls().stdout.split('\n');
 <pre><code>const { execFile } = require('child_process');
 const path = require('path');
 
-
 let stderrs = [];
-
 
 let process = execFile(path.join(__dirname, './myFile.sh', (error, stdout, stderr) =&gt; {
   if(error) {
@@ -253,7 +250,6 @@ let process = execFile(path.join(__dirname, './myFile.sh', (error, stdout, stder
   if(stdout) {
     console.log(`[child process]: ${stdout}`);
 );
-
 
 process.on('exit', (code) =&gt; {
   console.log(`process ended with exit code ${code}`);
@@ -285,13 +281,9 @@ process.on('exit', (code) =&gt; {
 <p>In <code>bin/index.js</code>.</p>
 <pre><code>#!/usr/bin/env node
 
-
 let { fork } = require('child_process);
 
-
 // continue with JavaScript!
-
-
 </code></pre><h2 id="setting-up-to-run-your-cli-locally">Setting up to run your CLI locally</h2>
 <p>Now you are all set up to execute the binary from the shell. Finally, in a shell, <code>cd</code> to your Node project and run <code>npm link</code>. This will link the binaries you specified in your <code>package.json</code> (<code>&quot;bin&quot;</code>) with your <code>PATH</code> (which is how all commands you run in the shell are found). You can now run your CLI on your computer anywhere! If you make changes in your project and save them, those changes will be immediately reflected when you run the project in the shell.</p>
 <p>Of course, this wouldn&rsquo;t be very useful if only you could run the project, so read on to publish!</p>

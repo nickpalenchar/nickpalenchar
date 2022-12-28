@@ -40,6 +40,9 @@
 
 
 
+  <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
 <body>
@@ -79,21 +82,21 @@
 <p>Anonymous functions are a great feature in JavaScript (especially with the dawn of Arrow Functions), however there are some nice advantages when you use them less. Here are the ones I&rsquo;ve noted:</p>
 <h2 id="functions-are-decoupled-from-the-processes-that-use-them">Functions are decoupled from the processes that use them.</h2>
 <p>By design, anonymous functions can only be used once (in their Function Declaration syntax). So it follows that the function body is written wherever it&rsquo;s used. We see this a lot in higher order array methods and other functional programing styles:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">recordsAfter2000</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">records</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">record</span>, <span style="color:#a6e22e">i</span>) =&gt; {
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>) {
-    <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>;
-    <span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">rlsDate</span>;
+<b>
+let recordsAfter2000 = records.map((record, i) => {
+  if (record.rlsDate) {
+    record.date = record.rlsDate;
+    delete record.rlsDate;
   }
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>) {
-    <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>;
-    <span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">releaseDate</span>;
+  if (record.releaseDate) {
+    record.date = record.releaseDate;
+    delete record.releaseDate;
   }
-  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">record</span>;
+  return record;
 })
-  .<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">record</span>) =&gt; <span style="color:#a6e22e">record</span>.<span style="color:#a6e22e">date</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2000</span>);
-
-</code></pre></div><p>This might take some time to understand, especially if you&rsquo;re new to programing. Refactoring is also a bit tricky, since you&rsquo;ll need to track and understand exactly where logic begins and ends.</p>
+  .filter((record) => record.date >= 2000);
+</b>
+<p>This might take some time to understand, especially if you&rsquo;re new to programing. Refactoring is also a bit tricky, since you&rsquo;ll need to track and understand exactly where logic begins and ends.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">recordsAfter2000</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">records</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">standardizeRecords</span>)
                        .<span style="color:#a6e22e">filter</span>(<span style="color:#a6e22e">filterBefore2000</span>);
