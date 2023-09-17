@@ -66,6 +66,12 @@ makes building static websites fun again (this site is built with Hugo)
 1. {{< popout-link "Cookiecutter" "https://cookiecutter.readthedocs.io/en/stable/" >}} - for templating entire projects
 1. {{< popout-link "PlopJS" "https://plopjs.com/" >}} - for templating single files.
 
+## Podcast Episodes
+
+61. {{< popout-link "The IT Guy Vs. The Con Artist" "https://www.npr.org/2019/08/07/749135286/episode-931-the-it-guy-vs-the-con-artist" >}} - This cyber-crime episode is an
+incredible true story that's gripping until the very end. A mild-mannered IT guy gets a job working at a high-crime scamming "company," and decides he wants to work
+under cover to get the very dangerous leader arrested.
+
 ### Honorable Mentions
 
 - For writing CLI's in Javascript, there's [CommanderJS](https://github.com/tj/commander.js)
