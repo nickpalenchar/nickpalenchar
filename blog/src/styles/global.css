@@ -10,6 +10,12 @@
 */
 @layer base {
 
+    a.no-underline a.no-underline:hover span.no-underline span.no-underline:hover {
+        text-decoration: none !important;
+    }
+    p {
+        @apply pb-4
+    }
     /* light theme */
     .theme-bubblegum {
         /* Custom #8AE6FB */
