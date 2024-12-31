@@ -1,0 +1,14 @@
+---
+interface Props {
+  highlight?: boolean;
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span";
+}
+const { highlight, as = "span" } = Astro.props;
+const classes = highlight
+  ? "bg-gradient-to-bl bg-no-repeat bg-bottom bg-[length:90%_40%] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue"
+  : "";
+---
+
+<b>
+  <span class={classes + " font-extrabold"}><slot /></span>
+</b>
