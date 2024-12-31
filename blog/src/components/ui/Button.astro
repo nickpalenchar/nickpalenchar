@@ -1,18 +1,36 @@
 ---
 interface Props {
   href?: string;
+  openInNewTab?: boolean;
   onClick?: Function;
+  role?: "primary" | "secondary";
+  extraClasses?: string[];
 }
-const { href, onClick } = Astro.props;
+const {
+  href,
+  onClick,
+  role = "primary",
+  openInNewTab = true,
+  extraClasses = [],
+} = Astro.props;
+const classes = {
+  primary:
+    `inline-block no-underline py-4 px-7 text-xl font-bold bg-yellow-400
+  text-black border-4 border-black hover:bg-black hover:text-yellow-400 
+  transition-all duration-200 shadow-[6px_6px_0px_0px_black] hover:shadow-[2px_2px_0px_0px_black]` +
+    " " +
+    extraClasses.join(" "),
+  secondary: "",
+};
+const target = "_blank";
 ---
 
 <a
   {...href ? { href } : {}}
-  class=`inline-block no-underline py-4 px-8 text-xl font-bold bg-yellow-400
-  text-black border-4 border-black hover:bg-black hover:text-yellow-400 
-  transition-all duration-200 shadow-[6px_6px_0px_0px_black] hover:shadow-[2px_2px_0px_0px_black]`
+  class={classes[role as "primary" | "secondary"] as string}
   role="button"
   {...onClick ? { onClick } : {}}
+  {...openInNewTab ? { target } : {}}
 >
   <span class="no-underline"><slot class="font-bold" /></span>
 </a>
