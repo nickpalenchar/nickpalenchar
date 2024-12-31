@@ -1,36 +1,31 @@
 ---
+import B from "./ui/B.astro";
+import Button from "./ui/Button.astro";
+import H1 from "./ui/H1.astro";
 ---
 
-<section class="mb-8">
-  <div class="mb-6">
-    <h1
-      class="font-bold text-text-heading text-center text-4xl md:text-5xl pt-4 pb-2 overflow-hidden"
-    >
-      <span
-        class="
-            bg-gradient-to-bl bg-no-repeat bg-bottom bg-[length:90%_40%]
-            from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue
-        "
-      >
-        Captain Awesome
-      </span>
-    </h1>
-    <!-- <p class="text-2xl pb-4">Web Developer. OSS Wizard. Blogger.</p> -->
-  </div>
-  <div>
-    <p class="mb-5">
-      Hello! This is a starter template to build your own blog with 
-      <a href={"https://github.com/flexdinesh/blogster"} target="_blank">Blogster</a>. 
-      Available in four themes  
-      <a href={"https://blogster-minimal.netlify.app"} target="_blank">minimal</a>, 
-      <a href={"https://blogster-sleek.netlify.app"} target="_blank">sleek</a>, 
-      <a href={"https://blogster-newspaper.netlify.app"} target="_blank">newspaper</a> and
-      <a href={"https://blogster-bubblegum.netlify.app"} target="_blank">bubblegum</a>. 
-      This blog is a demo for <strong>bubblegum</strong> theme.
-      Get started with one simple command.
-    </p>
-    <p class="text-center whitespace-nowrap overflow-auto">
-      <code class="py-1 px-2">npx create-blogster@latest --theme bubblegum</code>
-    </p>
-  </div>
-</section>
+<H1> Nick Palenchar is a creative in tech.</H1>
+
+<div>
+  <p class="mb-5">
+    He grew up in the performing arts, but a number of early learn-to-code
+    groups such as
+    <a href={"https://freecodecamp.org"} target="_blank">FreeCodeCamp</a>, and
+    eventually
+    <a href={"https://fullstackacademy.com"} target="_blank"
+      >Fullstack Academy</a
+    > inspired him to code for a living. To date he has {
+      Math.floor(
+        (Number(new Date()) - Number(new Date("2016-08-01"))) /
+          (1000 * 60 * 60 * 24 * 365.25)
+      )
+    } years of experience working primarily on backend systems, and is currently
+    at <a href="https://atlassian.com" target="_blank">Atlassian</a>.
+  </p>
+</div>
+<div class="flex justify-center mb-16">
+  <Button>Connect on LinkedIn</Button>
+</div>
+<p>
+  <B as="h2" highlight={true}>Nick Palenchar is not on social media.</B> Ya dig?
+</p>
