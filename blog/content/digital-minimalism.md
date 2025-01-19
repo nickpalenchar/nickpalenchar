@@ -18,7 +18,7 @@ This constant stimulation and the replacement of real-world interactions with di
 
 ## The Main Tenets of Digital Minimalism
 
-**Be Intentional**. Use technology only when it aligns with your values and goals. Don’t let tech use be passive or habitual.
+{% highlight text="Be Intentional" /%} Use technology only when it aligns with your values and goals. Don’t let tech use be passive or habitual.
 
 **Declutter Ruthlessly**. Identify apps, platforms, and tools that don’t serve you, and remove them. Less is more.
 

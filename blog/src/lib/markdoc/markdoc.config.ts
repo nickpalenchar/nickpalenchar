@@ -37,6 +37,16 @@ const { nodes, Tag } = Markdoc;
 */
 export const config: Config = {
   tags: {
+    highlight: {
+      render: "B", 
+      attributes: {
+        text: { type: String, required: true },
+      },
+      transform(node, config) {
+        const { text } = node.attributes; 
+        return new Tag(this.render, { highlight: true, text }, []);
+      },
+    },
     details: {
       render: "details",
       children: nodes.document.children,

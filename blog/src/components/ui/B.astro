@@ -2,13 +2,15 @@
 interface Props {
   highlight?: boolean;
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span";
+  text?: string;
 }
-const { highlight, as = "span" } = Astro.props;
+const { highlight, as = "span", text } = Astro.props;
 const classes = highlight
   ? "bg-gradient-to-bl bg-no-repeat bg-bottom bg-[length:90%_40%] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue"
   : "";
 ---
 
-<b>
+<span class={classes}>{text}</span>
+<!-- <b>
   <span class={classes + " font-extrabold dark:text-white"}><slot /></span>
-</b>
+</b> -->
