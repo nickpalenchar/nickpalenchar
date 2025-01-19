@@ -4,7 +4,7 @@ import Button from "./ui/Button.astro";
 import H1 from "./ui/H1.astro";
 ---
 
-<H1> Nick Palenchar is a creative in tech.</H1>
+<H1> Nick Palenchar is a creative in tech </H1>
 
 <div>
   <p class="mb-5">
@@ -24,8 +24,12 @@ import H1 from "./ui/H1.astro";
   </p>
 </div>
 <div class="flex flex-wrap gap-2 justify-center mb-16 space-x-6">
-  <Button>Connect on LinkedIn</Button>
-  <Button extraClasses={["bg-orange-200"]}>Considering Bootcamp?</Button>
+  <a href="https://linkedin.com/in/nickpalenchar" target="_blank"
+    ><Button href="https://linkedin.com/in/nickpalenchar" openInNewTab
+      >Connect on LinkedIn</Button
+    ></a
+  >
+  <!-- <Button extraClasses={["bg-orange-200"]}>Considering Bootcamp?</Button> -->
 </div>
 <p>
   <B as="h2" highlight={true}>Nick Palenchar is not on social media.</B> He loves
@@ -42,7 +46,7 @@ import H1 from "./ui/H1.astro";
   addictive tech is creating a less empathetic and disconnected society.
 </p>
 <div class="flex flex-wrap gap-2 justify-center mb-16 pt-4">
-  <Button>Learn about Digital Minimalism</Button>
+  <Button href="/digital-minimalism">Learn about Digital Minimalism</Button>
 </div>
 <p>
   <B highlight={true}
