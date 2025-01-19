@@ -18,15 +18,15 @@ This constant stimulation and the replacement of real-world interactions with di
 
 ## The Main Tenets of Digital Minimalism
 
-{% highlight text="Be Intentional" /%} Use technology only when it aligns with your values and goals. Don’t let tech use be passive or habitual.
+{% highlight text="Be Intentional." /%} Use technology only when it aligns with your values and goals. Don’t let tech use be passive or habitual.
 
-**Declutter Ruthlessly**. Identify apps, platforms, and tools that don’t serve you, and remove them. Less is more.
+{%highlight text="Declutter Ruthlessly" /%}. Identify apps, platforms, and tools that don’t serve you, and remove them. Less is more.
 
-**Focus on Value**. Prioritize tools and habits that provide meaningful benefits. Avoid activities that waste time or drain energy.
+{%highlight text="Focus on Value" /%}. Prioritize tools and habits that provide meaningful benefits. Avoid activities that waste time or drain energy.
 
-**Embrace Analog Activities**. Spend more time on offline activities that bring joy—reading, exercising, socializing, or pursuing hobbies.
+{%highlight text="Embrace Analog Activities" /%}. Spend more time on offline activities that bring joy—reading, exercising, socializing, or pursuing hobbies.
 
-**Set Boundaries**. Establish clear rules for when and how you use technology to protect your time and attention.
+{%highlight text="Set Boundaries" /%}. Establish clear rules for when and how you use technology to protect your time and attention.
 
 ## Want More? Read the OG Book!
 

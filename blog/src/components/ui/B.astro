@@ -10,7 +10,16 @@ const classes = highlight
   : "";
 ---
 
-<span class={classes}>{text}</span>
-<!-- <b>
-  <span class={classes + " font-extrabold dark:text-white"}><slot /></span>
-</b> -->
+{
+  text ? (
+    // new way, from {% highlight text="..." /%} in markdown
+    <span class={classes + " font-extrabold dark:text-white"}>{text}</span>
+  ) : (
+    //Old way, imported directly in astro.
+    <b>
+      <span class={classes + " font-extrabold dark:text-white"}>
+        <slot />
+      </span>
+    </b>
+  )
+}
