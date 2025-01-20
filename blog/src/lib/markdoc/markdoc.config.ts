@@ -37,6 +37,19 @@ const { nodes, Tag } = Markdoc;
 */
 export const config: Config = {
   tags: {
+    card: {
+      render: "Card", // The Astro component to render
+      attributes: {
+        image: { type: String, required: true }, // Image URL
+        alt: { type: String, required: false }, // Alt text for accessibility
+      },
+      children: ["inline", "block", 'paragraph', 'heading'],
+      transform(node, config) {
+        const { image, alt } = node.attributes;
+        const children = node.transformChildren(config);
+        return new Tag(this.render, { image, alt }, children);
+      },
+    },
     highlight: {
       render: "B", 
       attributes: {

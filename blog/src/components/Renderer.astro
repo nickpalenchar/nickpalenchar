@@ -8,6 +8,7 @@ import GitHubGistEmbed from "./GitHubGistEmbed.astro";
 import CodeBlock from "./CodeBlock.astro";
 import Heading from "./Heading.astro";
 import B from "./ui/B.astro";
+import Card from "./ui/Card.astro";
 
 type Props = {
   content: Content;
@@ -16,6 +17,7 @@ type Props = {
 const { content } = Astro.props;
 
 const components = {
+  Card: { Component: Card, props: {} },
   Heading: {
     Component: Heading,
     props: {},
