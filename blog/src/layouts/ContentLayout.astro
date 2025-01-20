@@ -16,18 +16,20 @@ import Footer from "../components/Footer.astro";
 
 export interface Props {
   title: string;
-  date: Date;
+  date: Date | null;
 }
 
 const { title, date } = Astro.props;
-const formattedDate = new Date(date).toLocaleDateString("en-us", {
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-});
+const formattedDate = date
+  ? new Date(date).toLocaleDateString("en-us", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    })
+  : null;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html class="theme-bubblegum" lang="en">
   <head>
     <!-- Global Metadata -->
@@ -41,21 +43,25 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
     <FontAwesome />
   </head>
 
-  <body
-    class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8"
-  >
+  <body class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8">
     <Header />
     <main id="main">
       <section class="blog-post prose max-w-none prose-bubblegum">
         <h1 class="m-0 mb-[0.25em]">
-          <span class="
-              pl-6 relative block leading-[150%]
-              after:absolute after:content-[''] after:w-2 after:h-full after:top-0 after:left-0 after:bg-primary-green
-            ">
+          <span
+            class="pl-6 relative block leading-[150%]
+              after:absolute after:content-[''] after:w-2 after:h-full after:top-0 after:left-0 after:bg-primary-green"
+          >
             {title}
           </span>
         </h1>
-        <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
+        {
+          (
+            <time class="block mb-[2em] text-text-muted">
+              {formattedDate ?? ""}
+            </time>
+          )
+        }
         <slot name="content" />
       </section>
     </main>
