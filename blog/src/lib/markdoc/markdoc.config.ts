@@ -37,6 +37,19 @@ const { nodes, Tag } = Markdoc;
 */
 export const config: Config = {
   tags: {
+    neobutton: {
+      render: "NeoButton",
+      attributes: {
+        role: { type: String, required: false },
+        href: {type: String, required: false},
+        openInNewTab: { type: Boolean, required: false }
+      },
+      children: ['inline', 'block', 'paragraph', 'text'],
+      transform(node, config) {
+        const children = node.transformChildren(config);
+        return new Tag(this.render, { ...node.attributes }, children)
+      }
+    },
     card: {
       render: "Card", // The Astro component to render
       attributes: {

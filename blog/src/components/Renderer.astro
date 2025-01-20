@@ -2,6 +2,7 @@
 import { MarkdocRenderer } from "astro-markdoc-renderer";
 import type { Content } from "astro-markdoc-renderer";
 import YouTubeEmbed from "./YouTubeEmbed.astro";
+import Button from "./ui/Button.astro";
 import TweetEmbed from "./TweetEmbed.astro";
 import CodePenEmbed from "./CodePenEmbed.astro";
 import GitHubGistEmbed from "./GitHubGistEmbed.astro";
@@ -18,6 +19,10 @@ const { content } = Astro.props;
 
 const components = {
   Card: { Component: Card, props: {} },
+  NeoButton: {
+    Component: Button,
+    props: ({ role = "compact", ...attributes }) => ({ role, ...attributes }),
+  },
   Heading: {
     Component: Heading,
     props: {},
