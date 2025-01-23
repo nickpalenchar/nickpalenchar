@@ -12,6 +12,9 @@ hide: ['date']
 - Vice
 - Infinity Baby
 ---
+- Eighth Grade
+- The Apprentice
+---
 - Thank You For Smoking
 - Game Night
 ---
@@ -24,5 +27,6 @@ hide: ['date']
 - Zombieland
 - The Social Network
 ---
+- I, Robot
 
 {% /table %}
