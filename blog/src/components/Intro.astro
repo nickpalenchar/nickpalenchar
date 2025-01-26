@@ -94,15 +94,18 @@ import H1 from "./ui/H1.astro";
   >
 </p>
 
-<p class="pt-8 mb-8">
-  <B highlight={true}
-    >Nick Palenchar has too many interests and not enough time!</B
-  >. Here's some other things he likes.
-</p>
 <div class="flex flex-wrap gap-2 justify-center mb-16 space-x-2">
-  <Button>Fav Books</Button>
-  <Button extraClasses={["bg-red-400"]}>Fav Movies</Button>
-  <Button extraClasses={["bg-blue-400"]}>Fav Recipes</Button>
-  <Button extraClasses={["bg-green-400"]}>Fav Podcasts</Button>
-  <Button extraClasses={["bg-gray-300"]}>Fav Articles</Button>
+  <Button href="/favs/books">Fav Books</Button>
+  <Button href="/favs/movies" extraClasses={["bg-red-400"]}>Fav Movies</Button>
+  <Button
+    href="https://nickiscooking.com"
+    openInNewTab
+    extraClasses={["bg-blue-400"]}>Fav Recipes</Button
+  >
+  <Button href="/favs/podcasts" extraClasses={["bg-green-400"]}
+    >Fav Podcasts</Button
+  >
+  <Button href="/favs/articles" extraClasses={["bg-gray-300"]}
+    >Fav Articles</Button
+  >
 </div>

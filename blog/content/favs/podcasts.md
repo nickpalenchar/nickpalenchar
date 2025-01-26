@@ -12,6 +12,8 @@ hide: ['date']
 
 {% table %}
 ---
+- [The IT Guy Vs. The Con Artist](https://www.npr.org/2019/08/07/749135286/episode-931-the-it-guy-vs-the-con-artist)
+---
 - Darknet Diaries - guy who made $20s
 - Darknet Diaries - the pirate bay
 ---
