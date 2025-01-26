@@ -10,14 +10,14 @@ Some projects.
 
 ## Active Projects 
 
-{% card image="https://placehold.co/400" alt="Placeholder Image" %}
+{% card image="/images/nickiscooking.png" alt="Placeholder Image" %}
 ### nickiscooking.com
 "Nick is Cooking" is my personal cooking blog, mostly for my own purposes of keeping track of recipes. The site is built on AstroJS and includes a custom extension of markdown for specifically for recipes _(which I plan to open source)_
 
 {% neobutton role="compact" openInNewTab=true href="https://nickiscooking.com" %}Website{% /neobutton %}
 {% /card %}
 
-{% card image="https://placehold.co/400" alt="Who Buzzed screenshot" %}
+{% card image="/images/whobuzzed.png" alt="Who Buzzed screenshot" %}
 ### WhoBuzzed
 Who Buzzed is a streamlined web app that connects multiple devices, allowing users to tap a button to start a "race" and instantly display the order in which participants buzzed.
 
@@ -29,15 +29,16 @@ _Not yet available to the public._
 
 These projects may or may not be available, and none are actively maintained.
 
-{% card image="" alt="hoppscotch" %}
+{% card image="/images/hoppscotch-dark.png" alt="hoppscotch" %}
 ### hoppscotch.io
 
 Hoppscotch.io is an alternative to Post Man as a Progressive Web App. I've previously made contributions to the project, but am no longer an active contributor.
 
-{% neobutton role="compact" openInNewTab=true href="https://google.com" %}GitHub{% /neobutton %}
+{% neobutton role="compact" openInNewTab=true href="https://github.com/hoppscotch/hoppscotch" %}GitHub{% /neobutton %} 
+{% neobutton role="compact" openInNewTab=true href="https://hoppscotch.io/" %}Hoppscotch App{% /neobutton %}
 {% /card %}
 
-{% card image="https://placehold.co/400" alt="Goodtimer screenshot" %}
+{% card image="/images/goodtimer.png" alt="Goodtimer screenshot" %}
 ### GoodTimer
 
 GoodTimer is an javascript library that provides a simple interface for count down/up timers. It uses a combination of setTimeout's and timestamps to re-calibrate and prevent drifts in time.
@@ -48,12 +49,12 @@ It is available to install but is no longer being maintained and will not receiv
 
 {% /card %}
 
-{% card image="https://placehold.co/400" alt="Tiny Tiny screenshot" %}
+{% card image="" alt="" %}
 ### Tiny Tiny
 
 Tiny Tiny was a url-shortener, which I once deployed for my own links. It was built after I designed it in a hypothetical during a job interview.
 
-{% neobutton role="compact" openInNewTab=true href="https://github.com/nickpalenchar/goodtimer" %}GitHub{% /neobutton %}
+{% neobutton role="compact" openInNewTab=true href="https://github.com/nickpalencharOpen/tinytiny" %}GitHub{% /neobutton %}
 
 {% /card %}
 

@@ -1,5 +1,5 @@
 ---
-title: "[Realistically] Boosting Your Interview Chances with GitHub"
+title: "Yes! Github Activity Matters!"
 date: 2021-02-06T09:40:03-05:00
 tags: ["tech-industry", "interview-prep", "github"]
 ---
@@ -12,7 +12,7 @@ The reason is always the same: their GitHub has half a year or much more of tota
 
 If there's one piece of advice I could shout from the rooftops, especially to new devs, is that an active GitHub is probably your best competitive advantage to getting an interview or referral cold.
 
-It's not a perfect system. But it's the system we have. And it never fully made sense to me until I found myself on the receiving end of resumes, with more to go through and time I had available.
+It's not a perfect system. But it's the system we have. And it never fully made sense to me until I found myself on the receiving end of resumes, with more to go through than time I had available.
 
 Simply put, most resumes with equal experience look the same. New bootcamp grads went to a bootcamp and did a couple of projects (that may or may not be hosted). Those with two years of experience have a company they've worked for, maybe two. And everyone is listing similar languages and technologies they use.
 
@@ -20,7 +20,7 @@ It's a start, but then I'm left with 5-10 resumes and 1-3 referrals I can comfor
 
 ## Getting your Github ready without loosing sleep
 
-You can easily increase your candidacy with an active GitHub but **you don't need to go crazy either**. Please don't [Eat-Sleep-Code-Repeat](https://medium.com/@iamtjah/eat-sleep-code-repeat-please-dont-f1453659d703). Conversely, you can get away with doing the bare minimum and be in a stratospherically better place. Here's some simple ways to do just that:
+You can easily increase your candidacy with an active GitHub but **you don't need to go crazy either**. Please don't [Eat-Sleep-Code-Repeat](https://medium.com/@iamtjah/eat-sleep-code-repeat-please-dont-f1453659d703). Simply doing bare minimum places you stratospherically above most others. So here's some simple ways to do just that:
 
 * **Set up some [dotfiles](https://missing.csail.mit.edu/2020/command-line/#dotfiles)** - Effortlessly save your configuration. And whenever you add to it, you get a 🟩. I use [dotbot](https://github.com/anishathalye/dotbot).
 * Whenever you take a class, or code through a book, **put that code on GitHub** - You don't need to author an open source library. Simple code snippets or notes in markdown are great! Put your LeetCode solutions up there too while you're at it. Don't let all the stuff you're already doing collect dust. Get those 🟩s!

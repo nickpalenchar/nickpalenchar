@@ -18,7 +18,7 @@ hide: ['date']
 - Thank You For Smoking
 - Game Night
 ---
-- Thoroughbreds
+- Jo Jo Rabbit
 - Dream Scenario
 ---
 - The Apprentice
@@ -28,5 +28,5 @@ hide: ['date']
 - The Social Network
 ---
 - I, Robot
-
+- Thoroughbreds
 {% /table %}
