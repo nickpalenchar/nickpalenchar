@@ -2,6 +2,11 @@
 title: "Yes! Github Activity Matters!"
 date: 2021-02-06T09:40:03-05:00
 tags: ["tech-industry", "interview-prep", "github"]
+external: false
+---
+
+_EDIT 01-23-2025: I've changed the framework I use to build this site from [Hugo](gohugo.com) to [AstroJS](https://astro.build), and the reference has been updated as such._
+
 ---
 
 When my employer is hiring, I'm the first to want to refer a good person. I'll reach out to my network of bootcamp grads, asking for resumes, hoping I can get them a job at a great company.
@@ -24,7 +29,7 @@ You can easily increase your candidacy with an active GitHub but **you don't nee
 
 * **Set up some [dotfiles](https://missing.csail.mit.edu/2020/command-line/#dotfiles)** - Effortlessly save your configuration. And whenever you add to it, you get a 🟩. I use [dotbot](https://github.com/anishathalye/dotbot).
 * Whenever you take a class, or code through a book, **put that code on GitHub** - You don't need to author an open source library. Simple code snippets or notes in markdown are great! Put your LeetCode solutions up there too while you're at it. Don't let all the stuff you're already doing collect dust. Get those 🟩s!
-* **[Host your website statically on GitHub](https://pages.github.com/).** - If you have a portfolio, every new thing you add is a 🟩. If you host a blog, new posts are new 🟩. [My website/blog](https://nickpalenchar.com) is hosted [this way](https://github.com/nickpalenchar/nickpalenchar) with [hugo](https://hugo.io).
+* **[Host your website statically on GitHub](https://pages.github.com/).** - If you have a portfolio, every new thing you add is a 🟩. If you host a blog, new posts are new 🟩. [My website/blog](https://nickpalenchar.com) is hosted [this way](https://github.com/nickpalenchar/nickpalenchar) with [AstroJS](https://astro.build).
 
 It will be very, very unlikely a hiring manager will look at your actual commits. Simply having anything up there is what matters. It shows you walk the walk and talk the talk. It immediately proves you have basic knowledge of the same version control they are definitely using at work.
 
