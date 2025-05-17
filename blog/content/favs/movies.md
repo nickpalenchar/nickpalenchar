@@ -15,6 +15,9 @@ hide: ['date']
 - Eighth Grade
 - The Apprentice
 ---
+- Blink Twice (2025)
+- The Worst Person In the World
+---
 - Thank You For Smoking
 - Game Night
 ---
