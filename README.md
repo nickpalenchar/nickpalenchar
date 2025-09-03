@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I'm Nick. Thriving coder, struggling musician 🎹🥴
+I'm Nick. Thriving coder, struggling Aerialist 🤸‍♀️
 
 ### Special prefixes in my workspace
 
