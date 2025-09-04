@@ -34,7 +34,7 @@ module.exports = {
           code: "rgb(var(--color-border-code) / <alpha-value>)",
         },
       },
-      typography: (theme) => ({
+      typography: () => ({
         DEFAULT: {
           css: {
             a: {

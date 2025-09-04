@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import { blogPageContent } from "../../config";
+import { render } from "astro:content";
+
+const posts = await getCollection("posts", ({ data }) => {
+  return data.draft !== true;
+});
+posts.sort((a, b) => {
+  const dateA = new Date(a.data.date).getTime();
+  const dateB = new Date(b.data.date).getTime();
+  return dateB - dateA;
+});
+for (const post of posts) {
+  const { remarkPluginFrontmatter } = await render(post);
+  post.data.readingTime = remarkPluginFrontmatter.minutesRead;
+}
+---
+
+<Layout seo={blogPageContent.seo}>
+  <!-- Fixed rotated title -->
+  <div class="fixed left-12 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+    <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-left opacity-20 tracking-tighter">
+      Blog
+    </h1>
+  </div>
+
+  <section class="mt-10 max-w-2xl mx-auto px-6 md:pl-20">
+    <h1 class="font-bold text-3xl mb-1">Blog</h1>
+    <p class="opacity-60 mb-14">{blogPageContent.subtitle}</p>
+
+    <div class="grid grid-cols-1 gap-10 sm:gap-6 mb-10">
+      {
+        posts.map((post) => (
+          <a
+            href={`/blog/${post.id}`}
+            class=" sm:flex sm:gap-6 post"
+          >
+
+            <div class="mt-4 sm:my-auto">
+              <p class="opacity-60 mb-2">
+                {post.data.date.toLocaleDateString()} ·{" "}
+                {post.data.readingTime}
+              </p>
+              <h3 class="font-medium hover-underline">{post.data.title}</h3>
+              <p class="text-sm opacity-60 mt-2 mb-3">{post.data.description || ""}</p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>
