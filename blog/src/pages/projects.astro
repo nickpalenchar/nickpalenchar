@@ -2,70 +2,69 @@
 import Layout from "../layouts/Layout.astro";
 import { projectsPageContent } from "../config";
 import ProjectCard from "../components/ProjectCard.astro";
+import FixedRotatedTitle from "../components/FixedRotatedTitle.astro";
 
 const projects = [
-  {
-    title: "nickiscooking.com",
-    description: "My personal cooking blog, mostly for my own purposes of keeping track of recipes. The site is built on AstroJS and includes a custom extension of markdown specifically for recipes (which I plan to open source).",
-    image: "/images/nickiscooking.png",
-    year: "2025",
-    url: "https://nickiscooking.com"
-  },
-  {
-    title: "hoppscotch.io",
-    description: "An alternative to Postman as a Progressive Web App. I've previously made contributions to the project, but am no longer an active contributor.",
-    image: "/images/hoppscotch-dark.png",
-    year: "2024",
-    url: "https://hoppscotch.io/"
-  },
-  {
-    title: "GoodTimer",
-    description: "A JavaScript library that provides a simple interface for count down/up timers. It uses a combination of setTimeout's and timestamps to re-calibrate and prevent drifts in time. Available to install but no longer maintained.",
-    image: "/images/goodtimer.png",
-    year: "2023",
-    url: "https://www.npmjs.com/package/goodtimer"
-  },
-  {
-    title: "WhoBuzzed",
-    description: "A streamlined web app that connects multiple devices, allowing users to tap a button to start a 'race' and instantly display the order in which participants buzzed. Used for local game nights but now deprioritized.",
-    image: "/images/whobuzzed.png",
-    year: "2022",
-    url: "#"
-  },
-  {
-    title: "Tiny Tiny",
-    description: "A URL-shortener which I once deployed for my own links. It was built after I designed it in a hypothetical during a job interview.",
-    image: "/demo-2.jpg",
-    year: "2021",
-    url: "https://github.com/nickpalencharOpen/tinytiny"
-  },
-  {
-    title: "Eat Tomatoes",
-    description: "The very first web app I deployed. It was a productivity site which kept track of how many pomodoros you completed in a day. No longer available.",
-    image: "/images/eattomatoes.png",
-    year: "2020",
-    url: "#"
-  }
+    {
+        title: "nickiscooking.com",
+        description:
+            "My personal cooking blog, mostly for my own purposes of keeping track of recipes. The site is built on AstroJS and includes a custom extension of markdown specifically for recipes (which I plan to open source).",
+        image: "/images/nickiscooking.png",
+        year: "2025",
+        url: "https://nickiscooking.com",
+    },
+    {
+        title: "hoppscotch.io",
+        description:
+            "An alternative to Postman as a Progressive Web App. I've previously made contributions to the project, but am no longer an active contributor.",
+        image: "/images/hoppscotch-dark.png",
+        year: "2024",
+        url: "https://hoppscotch.io/",
+    },
+    {
+        title: "GoodTimer",
+        description:
+            "A JavaScript library that provides a simple interface for count down/up timers. It uses a combination of setTimeout's and timestamps to re-calibrate and prevent drifts in time. Available to install but no longer maintained.",
+        image: "/images/goodtimer.png",
+        year: "2023",
+        url: "https://www.npmjs.com/package/goodtimer",
+    },
+    {
+        title: "WhoBuzzed",
+        description:
+            "A streamlined web app that connects multiple devices, allowing users to tap a button to start a 'race' and instantly display the order in which participants buzzed. Used for local game nights but now deprioritized.",
+        image: "/images/whobuzzed.png",
+        year: "2022",
+        url: "#",
+    },
+    {
+        title: "Tiny Tiny",
+        description:
+            "A URL-shortener which I once deployed for my own links. It was built after I designed it in a hypothetical during a job interview.",
+        image: "/demo-2.jpg",
+        year: "2021",
+        url: "https://github.com/nickpalencharOpen/tinytiny",
+    },
+    {
+        title: "Eat Tomatoes",
+        description:
+            "The very first web app I deployed. It was a productivity site which kept track of how many pomodoros you completed in a day. No longer available.",
+        image: "/images/eattomatoes.png",
+        year: "2020",
+        url: "#",
+    },
 ];
 ---
 
 <Layout seo={projectsPageContent.seo}>
-  <!-- Fixed rotated title -->
-  <div class="fixed left-20 top-1/2 -translate-y-1/2 -z-10 pointer-events-none" style="position: fixed; transform: translateY(-50%); will-change: auto;">
-    <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-left opacity-20 tracking-tighter" style="transform: rotate(-90deg);">
-      Projects
-    </h1>
-  </div>
+    <!-- Fixed rotated title -->
+    <FixedRotatedTitle title="Projects" />
 
-  <section class="mt-10 max-w-3xl mx-auto px-6 md:pl-20 md:pr-20">
-    <h1 class="font-bold text-3xl mb-1">Projects</h1>
-    <p class="opacity-60 mb-10">{projectsPageContent.subtitle}</p>
-    <div class="grid grid-cols-1 group">
-      {
-        projects.map((project) => (
-          <ProjectCard {...project} />
-        ))
-      }
-    </div>
-  </section>
+    <section class="mt-10 max-w-3xl mx-auto px-6 md:pl-20 md:pr-20">
+        <h1 class="font-bold text-3xl mb-1">Projects</h1>
+        <p class="opacity-60 mb-10">{projectsPageContent.subtitle}</p>
+        <div class="grid grid-cols-1 group">
+            {projects.map((project) => <ProjectCard {...project} />)}
+        </div>
+    </section>
 </Layout>

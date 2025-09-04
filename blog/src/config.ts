@@ -52,13 +52,12 @@ export const socialLinks: SocialLink[] = [
 export const homePageContent: HomePageContent = {
   seo: {
     title: "Nick Palenchar",
-    description:
-      "Software engineer and writer based in NYC.",
+    description: "Software developer and aerialist based in NYC.",
     image: identity.logo,
   },
   role: "Software Engineer",
   description:
-    "I'm Nick Palenchar, a software engineer and aerialist based in NYC.",
+    "I'm Nick Palenchar, a software developer and aerialist based in NYC.",
   socialLinks: socialLinks,
   links: [
     {
@@ -76,14 +75,13 @@ export const homePageContent: HomePageContent = {
 export const aboutPageContent: AboutPageContent = {
   seo: {
     title: "About | Nick Palenchar",
-    description:
-      "Software engineer and writer based in NYC.",
+    description: "Software developer and writer based in NYC.",
     image: identity.logo,
   },
   subtitle: "Some information about myself",
   about: {
     description: `
-I'm Nick Palenchar, a software engineer and aerialist based in NYC.
+I'm Nick Palenchar, a software developer and aerialist based in NYC.
 <br/><br/>
 I love building things with code and sharing what I learn along the way.`,
     image_l: {
@@ -106,7 +104,7 @@ I love building things with code and sharing what I learn along the way.`,
           url: "https://www.atlassian.com/",
         },
         date: "2020 - Present",
-        description: ""
+        description: "",
       },
       {
         title: "Software Developer – Infrastructure Platform",
@@ -134,7 +132,7 @@ I love building things with code and sharing what I learn along the way.`,
           url: "",
         },
         date: "2016 - 2018",
-      }
+      },
     ],
   },
   connect: {

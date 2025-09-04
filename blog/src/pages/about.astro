@@ -4,68 +4,68 @@ import Layout from "../layouts/Layout.astro";
 import { aboutPageContent } from "../config";
 import ResumeItem from "../components/ResumeItem.astro";
 import SocialLinkBox from "../components/SocialLinkBox.astro";
-import {marked} from "marked"
+import FixedRotatedTitle from "../components/FixedRotatedTitle.astro";
+import { marked } from "marked";
 
-const pageDescription = marked.parse(aboutPageContent.about.description)
-const workDescription = marked.parse(aboutPageContent.work.description)
-const connectDescription = marked.parse(aboutPageContent.connect.description)
+const pageDescription = marked.parse(aboutPageContent.about.description);
+const workDescription = marked.parse(aboutPageContent.work.description);
+const connectDescription = marked.parse(aboutPageContent.connect.description);
 ---
 
 <Layout seo={aboutPageContent.seo}>
-  <!-- Fixed rotated title -->
-  <div class="fixed left-14 top-1/2 -translate-y-1/2 -z-10 pointer-events-none" style="position: fixed; transform: translateY(-50%); will-change: auto;">
-    <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-left opacity-20 tracking-tighter" style="transform: rotate(-90deg);">
-      About
-    </h1>
-  </div>
+    <FixedRotatedTitle title="About" />
 
-  <section class="mt-10 max-w-3xl mx-auto px-6 md:pl-20">
-    <h1 class="font-bold text-3xl mb-1">About</h1>
-    <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
-    <div class="mb-14">
-      <Fragment set:html={pageDescription} />
-    </div>
-    <div class="flex flex-col min-[410px]:flex-row">
-      <Image
-        src={aboutPageContent.about.image_l.url}
-        alt={aboutPageContent.about.image_l.alt}
-        width={350}
-        height={250}
-        class="w-[350px] h-[250px] object-cover rounded-xl -rotate-6"
-      />
-      <Image
-        src={aboutPageContent.about.image_r.url}
-        alt={aboutPageContent.about.image_r.alt}
-        width={150}
-        height={250}
-        class="w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto"
-      />
-    </div>
-  </section>
-  <section class="my-20 mt-32 max-w-3xl mx-auto px-6 sm:flex sm:gap-16">
-    <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
-    <div>
-      <div class="mb-6">
-        <Fragment set:html={workDescription} />
-      </div>
-      <div class="grid grid-cols-1 group">
-        {aboutPageContent.work.items.map((item) => <ResumeItem {...item} />)}
-      </div>
-    </div>
-  </section>
-  <section class="mt-32 max-w-3xl mx-auto px-6 sm:flex sm:gap-16">
-    <h2 class="mb-8 sm:mb-0 opacity-60">Connect</h2>
-    <div>
-      <div class="mb-6">
-        <Fragment set:html={connectDescription} />
-      </div>
-      <div class="grid grid-cols-2 gap-2 group">
-        {
-          aboutPageContent.connect.links.map((item) => (
-            <SocialLinkBox {...item} />
-          ))
-        }
-      </div>
-    </div>
-  </section>
+    <section class="mt-10 max-w-3xl mx-auto px-6 md:pl-20">
+        <h1 class="font-bold text-3xl mb-1">About</h1>
+        <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
+        <div class="mb-14">
+            <Fragment set:html={pageDescription} />
+        </div>
+        <div class="flex flex-col min-[410px]:flex-row">
+            <Image
+                src={aboutPageContent.about.image_l.url}
+                alt={aboutPageContent.about.image_l.alt}
+                width={350}
+                height={250}
+                class="w-[350px] h-[250px] object-cover rounded-xl -rotate-6"
+            />
+            <Image
+                src={aboutPageContent.about.image_r.url}
+                alt={aboutPageContent.about.image_r.alt}
+                width={150}
+                height={250}
+                class="w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto"
+            />
+        </div>
+    </section>
+    <section class="my-20 mt-32 max-w-3xl mx-auto px-6 sm:flex sm:gap-16">
+        <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
+        <div>
+            <div class="mb-6">
+                <Fragment set:html={workDescription} />
+            </div>
+            <div class="grid grid-cols-1 group">
+                {
+                    aboutPageContent.work.items.map((item) => (
+                        <ResumeItem {...item} />
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+    <section class="mt-32 max-w-3xl mx-auto px-6 sm:flex sm:gap-16">
+        <h2 class="mb-8 sm:mb-0 opacity-60">Connect</h2>
+        <div>
+            <div class="mb-6">
+                <Fragment set:html={connectDescription} />
+            </div>
+            <div class="grid grid-cols-2 gap-2 group">
+                {
+                    aboutPageContent.connect.links.map((item) => (
+                        <SocialLinkBox {...item} />
+                    ))
+                }
+            </div>
+        </div>
+    </section>
 </Layout>
