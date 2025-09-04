@@ -29,8 +29,19 @@ const projectsCollection = defineCollection({
   }),
 });
 
+const favsCollection = defineCollection({
+  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./content/favs" }),
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    external: z.boolean().optional(),
+    hide: z.array(z.string()).optional(),
+  }),
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   posts: postsCollection,
   projects: projectsCollection,
+  favs: favsCollection,
 };

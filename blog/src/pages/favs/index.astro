@@ -1,0 +1,57 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const favs = await getCollection("favs");
+favs.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const favsPageContent = {
+  seo: {
+    title: "Favs | Nick Palenchar",
+    description: "My favorite books, movies, podcasts, and more.",
+  },
+  subtitle: "Things I love and recommend.",
+};
+---
+
+<Layout seo={favsPageContent.seo}>
+  <!-- Fixed rotated title -->
+  <div class="fixed left-16 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+    <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-center opacity-20 tracking-tighter">
+      Favs
+    </h1>
+  </div>
+
+  <!-- Fixed rotated subtitle accent -->
+  <div class="fixed right-4 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+    <p class="text-lg transform rotate-90 whitespace-nowrap origin-center opacity-60">
+      {favsPageContent.subtitle}
+    </p>
+  </div>
+
+  <section class="mt-10 max-w-4xl mx-auto px-6 md:pl-20 md:pr-20">
+    <h1 class="font-bold text-3xl mb-1">Favs</h1>
+    <p class="opacity-60 mb-14">{favsPageContent.subtitle}</p>
+
+    <div class="grid grid-cols-1 gap-10 sm:gap-6 mb-10">
+      {
+        favs.map((fav) => (
+          <a
+            href={`/favs/${fav.id}`}
+            class="sm:flex sm:gap-6 group-hover:opacity-60 hover:!opacity-100 transition-opacity"
+          >
+            <div class="mt-4 sm:my-auto">
+              <h3 class="font-medium hover-underline text-xl mb-2">{fav.data.title}</h3>
+              <p class="text-sm opacity-60">
+                {fav.data.title.includes("Books") && "📚 My favorite reads across fiction and non-fiction"}
+                {fav.data.title.includes("Movies") && "🎬 Films that left an impression on me"}
+                {fav.data.title.includes("Podcasts") && "🎧 Episodes and shows I always recommend"}
+                {fav.data.title.includes("Articles") && "📄 Coming soon..."}
+              </p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

@@ -10,8 +10,9 @@ import type {
 
 export const identity: Identity = {
   name: "Nick Palenchar",
-  logo: "/logo.webp",
-  email: "nick@nickpalenchar.com",
+  logo: "/rose-logo.png",
+  face: "/logo_light.png",
+  email: "nickpal@nickpalenchar.com",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -24,12 +25,12 @@ export const navBarLinks: NavBarLink[] = [
     url: "/about",
   },
   {
-    title: "Projects",
-    url: "/projects",
-  },
-  {
     title: "Blog",
     url: "/blog",
+  },
+  {
+    title: "Projects",
+    url: "/projects",
   },
 ];
 
@@ -42,7 +43,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     title: "Mail",
-    url: "mailto:nick@nickpalenchar.com",
+    url: "mailto:nickpal@nickpalenchar.com",
     icon: "mdi:email",
   },
 ];
@@ -55,9 +56,9 @@ export const homePageContent: HomePageContent = {
       "Software engineer and writer based in NYC.",
     image: identity.logo,
   },
-  role: "Software Engineer & Writer",
+  role: "Software Engineer",
   description:
-    "I'm Nick Palenchar, a software engineer and writer based in NYC.",
+    "I'm Nick Palenchar, a software engineer and aerialist based in NYC.",
   socialLinks: socialLinks,
   links: [
     {
@@ -82,15 +83,15 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "Some information about myself",
   about: {
     description: `
-I'm Nick Palenchar, a software engineer and writer based in NYC.
+I'm Nick Palenchar, a software engineer and aerialist based in NYC.
 <br/><br/>
-I love building things with code and sharing what I learn along the way.`, // Markdown is supported
+I love building things with code and sharing what I learn along the way.`,
     image_l: {
-      url: "/demo-1.jpg",
+      url: "/me.jpg",
       alt: "Left Picture",
     },
     image_r: {
-      url: "/demo-1.jpg",
+      url: "/aerial.png",
       alt: "Right Picture",
     },
   },
@@ -98,23 +99,42 @@ I love building things with code and sharing what I learn along the way.`, // Ma
     description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
     items: [
       {
-        title: "Software Developer",
+        title: "Senior Backend Developer",
         company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/nickpalenchar",
+          name: "Atlassian",
+          image: "/atlassian_logo.jpeg",
+          url: "https://www.atlassian.com/",
         },
-        date: "2021 - Present",
+        date: "2020 - Present",
+        description: ""
       },
       {
-        title: "Software Developer",
+        title: "Software Developer – Infrastructure Platform",
         company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/nickpalenchar",
+          name: "GQR",
+          image: "/gqrgm_logo.jpeg",
+          url: "",
         },
-        date: "2019 - 2021",
+        date: "2019 - 2020",
       },
+      {
+        title: "Backend/Infrastructure Developer",
+        company: {
+          name: "Untapt",
+          image: "/untapt_logo.jpeg",
+          url: "",
+        },
+        date: "2018 - 2019",
+      },
+      {
+        title: "Lead Engineer – Tech Enablement and DevOps",
+        company: {
+          name: "New York Life",
+          image: "/newyorklife_logo.jpeg",
+          url: "",
+        },
+        date: "2016 - 2018",
+      }
     ],
   },
   connect: {

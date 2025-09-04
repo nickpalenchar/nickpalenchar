@@ -14,6 +14,7 @@ export type SocialLink = {
 export type Identity = {
   name: string;
   logo: string;
+  face: string;
   email: string;
 };
 
@@ -43,6 +44,7 @@ export type ResumeItem = {
     url: string;
   };
   date: string;
+  description?: string;
 };
 
 export type AboutPageContent = {

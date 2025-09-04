@@ -69,9 +69,9 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
-  logo: "/logo.webp",
-  email: "tim@witzdam.com",
+  name: "Nick Palenchar",
+  logo: "/rose-logo.png",
+  email: "nickpal@nickpalenchar.com",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -162,7 +162,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
         title: "Software Developer",
         company: {
           name: "Freelance",
-          image: "/logo.webp",
+          image: "/logo_light.png",
           url: "https://github.com/TimWitzdam",
         },
         date: "2021 - Present",
@@ -171,7 +171,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
         title: "Software Developer",
         company: {
           name: "Freelance",
-          image: "/logo.webp",
+          image: "/logo_light.png",
           url: "https://github.com/TimWitzdam",
         },
         date: "2019 - 2021",
