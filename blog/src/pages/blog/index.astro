@@ -4,7 +4,9 @@ import { getCollection } from "astro:content";
 import { blogPageContent } from "../../config";
 import { render } from "astro:content";
 
-const posts = await getCollection("posts");
+const posts = await getCollection("posts", ({ data }) => {
+  return data.draft !== true;
+});
 posts.sort((a, b) => {
   const dateA = new Date(a.data.date).getTime();
   const dateB = new Date(b.data.date).getTime();
@@ -18,7 +20,7 @@ for (const post of posts) {
 
 <Layout seo={blogPageContent.seo}>
   <!-- Fixed rotated title -->
-  <div class="fixed left-16 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+  <div class="fixed left-12 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
     <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-left opacity-20 tracking-tighter">
       Blog
     </h1>
