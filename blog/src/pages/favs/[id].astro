@@ -1,6 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { getEntry, render } from "astro:content";
+import { getEntry, render, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const favs = await getCollection("favs");
+
+  return favs.map((fav) => ({
+    params: { id: fav.id },
+  }));
+}
 
 const { id } = Astro.params;
 const entry = await getEntry("favs", id as string);
