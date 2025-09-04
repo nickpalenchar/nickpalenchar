@@ -42,6 +42,12 @@ export const socialLinks: SocialLink[] = [
     external: true,
   },
   {
+    title: "LinkedIn",
+    url: "https://linkedin.com/in/nickpalenchar",
+    icon: "mdi:linkedin",
+    external: true,
+  },
+  {
     title: "Mail",
     url: "mailto:nickpal@nickpalenchar.com",
     icon: "mdi:email",
