@@ -12,7 +12,14 @@ const connectDescription = marked.parse(aboutPageContent.connect.description)
 ---
 
 <Layout seo={aboutPageContent.seo}>
-  <section class="mt-10 max-w-2xl mx-auto px-6">
+  <!-- Fixed rotated title -->
+  <div class="fixed left-4 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+    <h1 class="font-bold text-4xl transform -rotate-90 whitespace-nowrap origin-center opacity-80">
+      About
+    </h1>
+  </div>
+
+  <section class="mt-10 max-w-2xl mx-auto px-6 md:pl-20">
     <h1 class="font-bold text-3xl mb-1">About</h1>
     <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
     <div class="mb-14">
