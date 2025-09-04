@@ -20,7 +20,14 @@ const { Content,  remarkPluginFrontmatter} = await render(entry);
     description: entry.data.description || entry.data.title,
   }}
 >
-  <section class="mt-10 max-w-2xl mx-auto px-6">
+  <!-- Fixed rotated title -->
+  <div class="fixed left-16 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+    <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-left opacity-20 tracking-tighter">
+      Blog
+    </h1>
+  </div>
+
+  <section class="mt-10 max-w-2xl mx-auto px-6 md:pl-20">
     <h1 class="font-bold text-3xl mb-4">{entry.data.title}</h1>
     {entry.data.description && (
       <p class="opacity-60 mb-6">
