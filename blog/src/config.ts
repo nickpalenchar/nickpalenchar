@@ -10,8 +10,8 @@ import type {
 
 export const identity: Identity = {
   name: "Nick Palenchar",
-  logo: "/rose-logo.png",
-  face: "/logo_light.png",
+  logo: "/logo_light.png",
+  altLogo: "/rose-logo.png",
   email: "nickpal@nickpalenchar.com",
 };
 

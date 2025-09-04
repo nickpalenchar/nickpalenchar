@@ -13,13 +13,13 @@ const connectDescription = marked.parse(aboutPageContent.connect.description)
 
 <Layout seo={aboutPageContent.seo}>
   <!-- Fixed rotated title -->
-  <div class="fixed left-14 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
-    <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-left opacity-20 tracking-tighter">
+  <div class="fixed left-14 top-1/2 -translate-y-1/2 -z-10 pointer-events-none" style="position: fixed; transform: translateY(-50%); will-change: auto;">
+    <h1 class="font-black text-9xl transform -rotate-90 whitespace-nowrap origin-left opacity-20 tracking-tighter" style="transform: rotate(-90deg);">
       About
     </h1>
   </div>
 
-  <section class="mt-10 max-w-2xl mx-auto px-6 md:pl-20">
+  <section class="mt-10 max-w-3xl mx-auto px-6 md:pl-20">
     <h1 class="font-bold text-3xl mb-1">About</h1>
     <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
     <div class="mb-14">
@@ -42,7 +42,7 @@ const connectDescription = marked.parse(aboutPageContent.connect.description)
       />
     </div>
   </section>
-  <section class="my-20 mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
+  <section class="my-20 mt-32 max-w-3xl mx-auto px-6 sm:flex sm:gap-16">
     <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
     <div>
       <div class="mb-6">
@@ -53,7 +53,7 @@ const connectDescription = marked.parse(aboutPageContent.connect.description)
       </div>
     </div>
   </section>
-  <section class="mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
+  <section class="mt-32 max-w-3xl mx-auto px-6 sm:flex sm:gap-16">
     <h2 class="mb-8 sm:mb-0 opacity-60">Connect</h2>
     <div>
       <div class="mb-6">

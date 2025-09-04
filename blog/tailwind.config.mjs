@@ -8,5 +8,17 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    function ({ addComponents }) {
+      addComponents({
+        ".content-container": {
+          "@apply max-w-3xl mx-auto px-6": {},
+        },
+        ".content-container-padded": {
+          "@apply max-w-3xl mx-auto px-6 md:pl-20 md:pr-20": {},
+        },
+      });
+    },
+  ],
 };

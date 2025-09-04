@@ -70,7 +70,7 @@ import type {
 
 export const identity: Identity = {
   name: "Nick Palenchar",
-  logo: "/rose-logo.png",
+  logo: "/logo_light.png",
   email: "nickpal@nickpalenchar.com",
 };
 
