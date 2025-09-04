@@ -9,9 +9,9 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
+  name: "Nick Palenchar",
   logo: "/logo.webp",
-  email: "tim@witzdam.com",
+  email: "nick@nickpalenchar.com",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -36,13 +36,13 @@ export const navBarLinks: NavBarLink[] = [
 export const socialLinks: SocialLink[] = [
   {
     title: "GitHub",
-    url: "https://github.com/TimWitzdam",
+    url: "https://github.com/nickpalenchar",
     icon: "mdi:github",
     external: true,
   },
   {
     title: "Mail",
-    url: "mailto:tim@witzdam.com",
+    url: "mailto:nick@nickpalenchar.com",
     icon: "mdi:email",
   },
 ];
@@ -50,14 +50,14 @@ export const socialLinks: SocialLink[] = [
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Tim Witzdam",
+    title: "Nick Palenchar",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "Software engineer and writer based in NYC.",
     image: identity.logo,
   },
-  role: "Student & Software Developer",
+  role: "Software Engineer & Writer",
   description:
-    "I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.",
+    "I'm Nick Palenchar, a software engineer and writer based in NYC.",
   socialLinks: socialLinks,
   links: [
     {
@@ -74,18 +74,17 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Tim Witzdam",
+    title: "About | Nick Palenchar",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "Software engineer and writer based in NYC.",
     image: identity.logo,
   },
   subtitle: "Some information about myself",
   about: {
     description: `
-I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.
+I'm Nick Palenchar, a software engineer and writer based in NYC.
 <br/><br/>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat est architecto tempora voluptatem sit suscipit aspernatur? <br/><br/>
-Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium consectetur nemo vero officia itaque.`, // Markdown is supported
+I love building things with code and sharing what I learn along the way.`, // Markdown is supported
     image_l: {
       url: "/demo-1.jpg",
       alt: "Left Picture",
@@ -103,7 +102,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
         company: {
           name: "Freelance",
           image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          url: "https://github.com/nickpalenchar",
         },
         date: "2021 - Present",
       },
@@ -112,7 +111,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
         company: {
           name: "Freelance",
           image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          url: "https://github.com/nickpalenchar",
         },
         date: "2019 - 2021",
       },
@@ -127,7 +126,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Tim Witzdam",
+    title: "Projects | Nick Palenchar",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
@@ -138,21 +137,21 @@ export const projectsPageContent: ProjectPageContent = {
       description: "Project 1 Description",
       image: "/demo-2.jpg",
       year: "2024",
-      url: "https://github.com/TimWitzdam",
+      url: "https://github.com/nickpalenchar",
     },
     {
       title: "Project 1",
       description: "Project 1 Description",
       image: "/demo-2.jpg",
       year: "2024",
-      url: "https://github.com/TimWitzdam",
+      url: "https://github.com/nickpalenchar",
     },
     {
       title: "Project 1",
       description: "Project 1 Description",
       image: "/demo-2.jpg",
       year: "2024",
-      url: "https://github.com/TimWitzdam",
+      url: "https://github.com/nickpalenchar",
     },
   ],
 };
@@ -160,7 +159,7 @@ export const projectsPageContent: ProjectPageContent = {
 // Blog (/blog)
 export const blogPageContent: BlogPageContent = {
   seo: {
-    title: "Blog | Tim Witzdam",
+    title: "Blog | Nick Palenchar",
     description: "Thoughts, stories and ideas.",
     image: identity.logo,
   },

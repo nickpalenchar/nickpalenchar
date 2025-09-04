@@ -7,7 +7,7 @@
         "title": {
           "type": "string"
         },
-        "pubDate": {
+        "date": {
           "anyOf": [
             {
               "type": "string",
@@ -26,24 +26,23 @@
         "description": {
           "type": "string"
         },
-        "author": {
-          "type": "string"
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
-        "image": {
-          "type": "object",
-          "properties": {
-            "url": {
-              "type": "string"
-            },
-            "alt": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "url",
-            "alt"
-          ],
-          "additionalProperties": false
+        "external": {
+          "type": "boolean"
+        },
+        "draft": {
+          "type": "boolean"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "readingTime": {
           "type": "number"
@@ -54,10 +53,7 @@
       },
       "required": [
         "title",
-        "pubDate",
-        "description",
-        "author",
-        "image"
+        "date"
       ],
       "additionalProperties": false
     }
