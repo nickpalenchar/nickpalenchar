@@ -1,0 +1,31 @@
+---
+import { readOne } from "../lib/markdoc/read";
+import { post } from "../lib/markdoc/frontmatter.schema";
+import Renderer from "../components/Renderer.astro";
+import BlogPostMeta from "../components/BlogPostMeta.astro";
+import ContentLayout from "../layouts/ContentLayout.astro";
+import { SITE_URL } from "../config";
+
+const { content, frontmatter } = await readOne({
+  directory: ".",
+  slug: "projects",
+  frontmatterSchema: post,
+});
+
+const ogImageAbsoluteUrl = frontmatter.ogImagePath
+  ? new URL(frontmatter.ogImagePath, SITE_URL).toString()
+  : undefined;
+---
+
+<ContentLayout title={frontmatter.title} date={null}>
+  <BlogPostMeta
+    title={frontmatter.title}
+    description={frontmatter.description}
+    publishDate={frontmatter.date.toISOString()}
+    hide={frontmatter.hide}
+    pagePath="/projects"
+    ogImageAbsoluteUrl={ogImageAbsoluteUrl}
+    slot="meta"
+  />
+  <Renderer content={content} slot="content" />
+</ContentLayout>
