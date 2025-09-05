@@ -16,3 +16,7 @@ This applies to literally anything worth doing: working out, learning a new lang
 ## If you chase two rabbits at the same time, you will end up catching neither.
 
 This is hard lesson for me, who very much enjoys exploring new things. But this concept was absolutely crucial when I began learning to code--It was in the form of advice from freeCodeCamp that "you've got to focus" when first starting out (in this case, it was focus on just learning JavaScript, without frameworks and ignoring any other languages). Learning to code is particuarly difficult because there's so many ways you can approach it. But in many ways it doesn't matter where you start so long as you understand your entrypoint deeply.
+
+# Optimism is a driving force behind success.
+
+And no, I'm not talking about sugar-coating things or [ignoring the bad news](/blog/breaking-bad-news)
