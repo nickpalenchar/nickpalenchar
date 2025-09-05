@@ -23,16 +23,13 @@ const repeatedLetters = Array.from({ length: 10 }, (_, i) => ({
 }));
 ---
 
-<div
-    class={`fixed left-16 bottom-11 -translate-y-1/2 -z-10 pointer-events-none ${className}`}
-    style={`position: fixed; transform: translateY(-50%); will-change: auto; ${style}`}
->
+<div>
     <h1
-        class={`font-black text-[12em] transform -rotate-90 whitespace-nowrap origin-left opacity-[13%] min-[800px]:opacity-30 transition-opacity ease-in-out duration-500`}
-        style={`transform: rotate(-90deg); letter-spacing: ${tracking};`}
+        class={`font-black text-[12em] fixed left-[1.12em] bottom-[20%] -rotate-90 origin-bottom-left whitespace-nowrap opacity-[13%] min-[800px]:opacity-30 transition-opacity ease-in-out duration-500`}
+        style={`letter-spacing: ${tracking}`}
     >
-        {title}<span class="opacity-[65%] min-[800px]:opacity-50"
-            >{title.slice(-1).repeat(10)}</span
+        {title}<span class="opacity-[65%] min-[800px]:opacity-40"
+            >{title.slice(-1).repeat(8)}</span
         >
     </h1>
 </div>
