@@ -5,7 +5,9 @@
       "type": "object",
       "properties": {
         "title": {
-          "type": "string"
+          "type": "string",
+          "description": "Favorites list title",
+          "markdownDescription": "Favorites list title"
         },
         "date": {
           "anyOf": [
@@ -21,16 +23,23 @@
               "type": "integer",
               "format": "unix-time"
             }
-          ]
+          ],
+          "description": "Last updated date",
+          "markdownDescription": "Last updated date"
         },
         "external": {
-          "type": "boolean"
+          "type": "boolean",
+          "default": false,
+          "description": "Is this an external link?",
+          "markdownDescription": "Is this an external link?"
         },
         "hide": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Items to hide from display",
+          "markdownDescription": "Items to hide from display"
         },
         "$schema": {
           "type": "string"

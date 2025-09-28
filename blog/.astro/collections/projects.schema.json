@@ -5,10 +5,14 @@
       "type": "object",
       "properties": {
         "title": {
-          "type": "string"
+          "type": "string",
+          "description": "Project name",
+          "markdownDescription": "Project name"
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "Project description",
+          "markdownDescription": "Project description"
         },
         "date": {
           "anyOf": [
@@ -24,16 +28,25 @@
               "type": "integer",
               "format": "unix-time"
             }
-          ]
+          ],
+          "description": "Project completion date",
+          "markdownDescription": "Project completion date"
         },
         "url": {
-          "type": "string"
+          "type": "string",
+          "description": "Project URL or GitHub link",
+          "markdownDescription": "Project URL or GitHub link"
         },
         "image": {
-          "type": "string"
+          "type": "string",
+          "description": "Project image/screenshot",
+          "markdownDescription": "Project image/screenshot"
         },
         "draft": {
-          "type": "boolean"
+          "type": "boolean",
+          "default": false,
+          "description": "Is this project a draft?",
+          "markdownDescription": "Is this project a draft?"
         },
         "$schema": {
           "type": "string"

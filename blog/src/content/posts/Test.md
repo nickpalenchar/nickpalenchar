@@ -1,7 +1,8 @@
 ---
 title: "My First Blog Post with a very long name"
-pubDate: 2022-07-01 #Y-M-D
+date: 2022-07-01T00:00:00-05:00
 description: "Test"
-author: "Tim"
-image: { url: "/logo_light.png", alt: "Test" }
+tags: []
+external: false
+draft: false
 ---

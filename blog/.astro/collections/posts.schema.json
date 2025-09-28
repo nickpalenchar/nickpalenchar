@@ -5,7 +5,9 @@
       "type": "object",
       "properties": {
         "title": {
-          "type": "string"
+          "type": "string",
+          "description": "The title of your blog post",
+          "markdownDescription": "The title of your blog post"
         },
         "date": {
           "anyOf": [
@@ -21,31 +23,48 @@
               "type": "integer",
               "format": "unix-time"
             }
-          ]
+          ],
+          "description": "Publication date",
+          "markdownDescription": "Publication date"
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "SEO description for the post",
+          "markdownDescription": "SEO description for the post"
         },
         "tags": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "default": [],
+          "description": "Tags for categorization",
+          "markdownDescription": "Tags for categorization"
         },
         "external": {
-          "type": "boolean"
+          "type": "boolean",
+          "default": false,
+          "description": "Is this an external link?",
+          "markdownDescription": "Is this an external link?"
         },
         "draft": {
-          "type": "boolean"
+          "type": "boolean",
+          "default": false,
+          "description": "Is this a draft?",
+          "markdownDescription": "Is this a draft?"
         },
         "aliases": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "URL aliases for this post",
+          "markdownDescription": "URL aliases for this post"
         },
         "readingTime": {
-          "type": "number"
+          "type": "number",
+          "description": "Estimated reading time in minutes",
+          "markdownDescription": "Estimated reading time in minutes"
         },
         "$schema": {
           "type": "string"
