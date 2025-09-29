@@ -48,11 +48,13 @@ app.get('/api/posts', (req, res) => {
       const filePath = path.join(POSTS_DIR, f);
       const raw = fs.readFileSync(filePath, 'utf8');
       const { data } = matter(raw);
+      const stats = fs.statSync(filePath);
       return { 
         slug, 
         title: data.title || 'Untitled',
         date: data.date,
         draft: data.draft || false,
+        createdAt: stats.birthtime,
         frontmatter: {
           title: data.title || 'Untitled',
           date: data.date ? new Date(data.date).toISOString().split('T')[0] : new Date().toISOString().split('T')[0],
@@ -65,6 +67,10 @@ app.get('/api/posts', (req, res) => {
         }
       };
     });
+    
+    // Sort by creation date (newest first)
+    posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    
     res.json(posts);
   } catch (error) {
     console.error('Error reading posts:', error);
