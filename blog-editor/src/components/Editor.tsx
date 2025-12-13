@@ -65,7 +65,7 @@ const Editor: React.FC<EditorProps> = ({ post, onSave }) => {
   return (
     <div className="editor-container">
       <div className="editor-header">
-        <h2>{post.title}</h2>
+        <h2>{frontmatter.title || post.title}</h2>
         <div className="editor-actions">
           {hasUnsavedChanges && (
             <span className="unsaved-indicator">Unsaved changes</span>

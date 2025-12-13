@@ -3,7 +3,7 @@ title: My First Blog Post with a very long name
 date: 2025-07-08
 description: Test
 external: false
-draft: false
+draft: true
 ---
 
 This is test content

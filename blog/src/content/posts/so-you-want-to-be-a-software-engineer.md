@@ -1,6 +1,7 @@
 ---
 external: false
 title: 'So You Want to Be a Software Engineer (2025 Edition)'
+draft: true
 date: 2024-04-09T08:41:42-04:00
 ---
 

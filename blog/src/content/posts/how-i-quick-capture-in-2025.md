@@ -5,7 +5,7 @@ description: ''
 tags:
   - how
 external: false
-draft: false
+draft: true
 ---
 I wanted to write about how I plan out my days/weeks/months for some time. That will remain unwritten for a bit longer 😂 but I _do_ want to jot down how I capture incoming ideas, things I need to remind myself of, ...
 

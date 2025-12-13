@@ -32,7 +32,7 @@ function App() {
       setSelectedPost({
         ...post,
         frontmatter: data.frontmatter,
-        content: data.content
+        content: data.content,
       });
     } catch (error) {
       console.error('Error fetching post details:', error);
@@ -51,40 +51,62 @@ function App() {
         body: JSON.stringify({ frontmatter, content }),
       });
 
-      if (response.ok) {
-        await fetchPosts();
-        setSelectedPost({
-          ...selectedPost,
-          frontmatter,
-          content
-        });
-        alert('Post saved successfully!');
-      } else {
-        alert('Failed to save post');
-      }
+      if (!response.ok) throw new Error('Failed to save post');
+      await fetchPosts();
+      setSelectedPost({
+        ...selectedPost,
+        frontmatter,
+        content,
+      });
+      alert('Post saved successfully!');
     } catch (error) {
       console.error('Error saving post:', error);
       alert('Error saving post');
     }
   };
 
-  const handleNewPost = () => {
-    const newPost: Post = {
-      slug: 'new-post',
-      title: 'New Post',
-      date: new Date().toISOString().split('T')[0],
+  const handleNewPost = async () => {
+    const today = new Date().toISOString().split('T')[0];
+    const suggested = `New Post ${new Date().toLocaleString()}`;
+    const title = window.prompt('Title for new post?', suggested) || suggested;
+
+    const frontmatter: Frontmatter = {
+      title,
+      date: today,
+      description: '',
+      tags: [],
+      external: false,
       draft: true,
-      frontmatter: {
-        title: 'New Post',
-        date: new Date().toISOString().split('T')[0],
-        description: '',
-        tags: [],
-        external: false,
-        draft: true
-      },
-      content: ''
     };
-    setSelectedPost(newPost);
+
+    try {
+      const response = await fetch(`http://localhost:4000/api/posts`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title, frontmatter, content: '' }),
+      });
+
+      if (!response.ok) throw new Error('Failed to create post');
+      const result = await response.json();
+      const slug = result.slug;
+
+      await fetchPosts();
+
+      const created: Post = {
+        slug,
+        title: frontmatter.title,
+        date: frontmatter.date,
+        draft: frontmatter.draft,
+        frontmatter,
+        content: '',
+      };
+      setSelectedPost(created);
+    } catch (e) {
+      console.error(e);
+      alert('Failed to create post');
+    }
   };
 
   if (loading) {
