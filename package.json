@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "npm --prefix blog run sync && npm --prefix blog run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
