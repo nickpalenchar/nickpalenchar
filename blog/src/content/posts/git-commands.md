@@ -34,13 +34,13 @@ Generally, when you try to commit when nothing is staged for doing so, you'll ge
 
 **Why it's life-changing:** (I love showing off this one.) There are lots of situations where you need to test doing something with a new commit in order to verify some sort of workflow. A common scenario in my work is verifying a webhook in Continuous Integration will pick up a newly pushed branch. I _could_ `touch yet_another_new_file`, then add it, _then_ commit it. Or I could `git commit --allow-empty -m 'empty commit for debugging'` and push that. So convenient. Just one word of warning: you probably don't want this in a more formal codebase; but it's great for a prototyping/testing repo that you will dispose of.
 
-### git stash / git stash pop
+### `git stash / git stash pop`
 
 Admittedly a little more well-known, but if you _weren't_ aware of `stash`, I'm glad I can take this opportunity to enlighten you. `git stash` sets all your working changes aside (on a stack) and gives you a clean working directory. You can git stash multiple times, and the most recent stash will be at the top if the stack that git has been adding them too. As it goes with stacks, `git stash pop` will pop the top-most set of working changes and add them back to the branch you're currently on, ready to be modified or committed.
 
 **Why it's life-changing:** The most common use for a quick `git stash`/`git stash pop` is to move the working changes you've made from one branch to another. Say you've started working on some changes, only to realize you're on the `master` branch! Depending on your repo setup (and if you're in a team), you probably can't push changes from your master branch. You're stuck! This is the classic opportunity for the stash command. Simply `git stash` to set those changes aside, restoring your master branch to good-standing cleanness. Then `git checkout` the branch you intended to use and `git stash pop`. All your new work has been seamlessly moved from one branch to another!
 
-### git rm --cached
+### `git rm --cached`
 
 Another one that's a bit well known, but not known enough in my opinion (or I wouldn't still be removing files that were considered removed). `git rm` can remove a file that has previously been committed, but adding `--cached` will better ensure it does not come back.
 

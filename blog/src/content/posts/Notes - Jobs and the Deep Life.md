@@ -8,7 +8,7 @@ external: false
 draft: false
 ---
 
-These are my personal notes on the podcas [Jobs and the Deep Life (Cal Newport)](https://www.thedeeplife.com/podcasts/episodes/ep-320-jobs-and-the-deep-life/)
+These are my personal notes on the podcast [Jobs and the Deep Life (Cal Newport)](https://www.thedeeplife.com/podcasts/episodes/ep-320-jobs-and-the-deep-life/)
 
 ## 4 Paradoxes of Work
 
@@ -26,15 +26,15 @@ The idea that if you just get to a very prestigious level in your work you'll be
 
 |Expectation|Reality|
 |-----------|-------|
-|Highly regarded in you field garantees job security, allows you to work the way you'd want to.|Pursuit of "Grand Goals" trample other important life areas; accomplishment is rewarded with more work/stress|
+|Highly regarded in your field guarantees job security, allows you to work the way you'd want to.|Pursuit of "Grand Goals" tramples other important life areas; accomplishment is rewarded with more work/stress|
 
 ### \#3 FU Money Paradox
 
-Many of us understand the idea of having FU Money, which allows you to say "Fuck you" to whomever you want (like your boss), because you are so weathly you no longer depend on having a job.
+Many of us understand the idea of having FU Money, which allows you to say "Fuck you" to whomever you want (like your boss), because you are so wealthy you no longer depend on having a job.
 
 |Expectation|Reality|
 |-----------|-------|
-|You will never have to answer to anyone.|Actually achieving this is unrealistic for most, is only even possible in a small number of professions, and ofter requires large sacrifices such as your health & relationships. Even if you were to achieve FU money status, there is a lot of positives about being in a fulfilling career that FU money removes.|
+|You will never have to answer to anyone.|Actually achieving this is unrealistic for most, is only even possible in a small number of professions, and often requires large sacrifices such as your health & relationships. Even if you were to achieve FU money status, there are a lot of positives about being in a fulfilling career that FU money removes.|
 
 ### \#4. The Bohemian Paradox
 
@@ -50,9 +50,9 @@ The first step is to really **understand what kind of life you want**, which Cal
 
 From there, first invest in skills and career capital in order to get to the number you set, and then begin trading higher income for more flexibility/time/whatever helps achieve the life you set out for yourself.
 
-## Job a a Tool
+## Job as a Tool
 
-When thinking of places to work, it's useful to asses Them based on 3 criteria:
+When thinking of places to work, it's useful to assess them based on 3 criteria:
 
 1. How much money it generates
 1. How much time it requires

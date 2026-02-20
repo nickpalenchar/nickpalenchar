@@ -8,11 +8,11 @@ external: false
 draft: true
 ---
 
-Rather than hoarding a "Best Sh\*t" of blog post at the very end of the year like I usually do, I'm trying something new _
+Rather than hoarding a "Best Sh\*t" blog post at the very end of the year like I usually do, I'm trying something new.
 
 ## Things I'm adding
 
-justthebrowser.com - simple way to remove all "non-browser" features from Chorme/Firefox/Edge (adware, AI feature, etc).
+justthebrowser.com - simple way to remove all "non-browser" features from Chrome/Firefox/Edge (adware, AI features, etc).
 
 ## Things I'm Removing
 

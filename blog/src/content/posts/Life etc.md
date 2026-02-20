@@ -10,9 +10,9 @@ draft: true
 
 
  > [!NOTE]
- > This is essentialy my own "home page" based on alex vemeer
+ > This is essentially my own "home page" based on Alex Vermeer
 
-# Fitness & Health is always a top proiroty
+# Fitness & Health is always a top priority
 
 ## Fitness
 
@@ -22,11 +22,11 @@ Start writing...
 
 ### Yoga/stretching
 
-flexibility and stretching is the key to preventing injury. In other words, it allows you to train longer and get fit faster. I try to stretch whenever I can. I'll do yoga classes when I have time, but I'll also stretch in small intervals (like during pomodoro breaks)
+flexibility and stretching is the key to preventing injury. In other words, it allows you to train longer and get fit faster. I try to stretch whenever I can. I'll do yoga classes when I have time, but I'll also stretch in small intervals (like during Pomodoro breaks).
 
 ### Climbing
 
-I heard from AV that "\[climbing\] feels like cheating." It's fun, challenging, and you can do it for long periods of time (rest intervals are practically built in)
+I heard from AV that "[climbing] feels like cheating." It's fun, challenging, and you can do it for long periods of time (rest intervals are practically built in).
 
 #### Strength Training
 
@@ -51,17 +51,17 @@ I'm not perfect, but I try not to eat sh\*t like, all the time. This could defin
 Getting lots more fiber in order to help lower my cholesterol. I try to get at least 15% in the morning (with the overall goal of hitting 25%).
 
 * **Bob's Red Mill Protein Oatmeal** - 21% DV fiber, (bonus 12% DV protein)
-* **Beans** - These are quite literally nutrient bullets, and healthiest foods you can find for its price (dirt cheap) I'm learning to make many more dishes with them.
-* **Spinach/Kale** - Michael Pollon said all we know about dark, leafy greens is that they "are incredibly good for you."
+* **Beans** - These are quite literally nutrient bullets, and among the healthiest foods you can find for their price (dirt cheap). I'm learning to make many more dishes with them.
+* **Spinach/Kale** - Michael Pollan said all we know about dark, leafy greens is that they "are incredibly good for you."
 
 # Focus
 
-In a world of constants digital distraction, being able to deep focus can become a highly valuable skill that could be the bedrock of your entire vocation. Especially in knowledge work, being able to focus deeply for long, uninterrupted periods of time will make you more productive. You'll get shit done faster, you'll upskill faster.
+In a world of constant digital distraction, being able to deep focus can become a highly valuable skill that could be the bedrock of your entire vocation. Especially in knowledge work, being able to focus deeply for long, uninterrupted periods of time will make you more productive. You'll get shit done faster, you'll upskill faster.
 
 # Resources
 
 * **The Last Safe Investment** - reread that
-* **Cal Newports so good they cant ignore you**
+* **Cal Newport's _So Good They Can't Ignore You_**
 * The decision book? actually read it?
 
 ---

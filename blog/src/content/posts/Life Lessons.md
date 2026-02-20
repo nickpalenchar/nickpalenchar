@@ -8,10 +8,12 @@ external: false
 draft: true
 ---
 
-Start writing...#### The way you communicate with the world, determines how the world interacts with you
+Start writing...
 
-#### We over estimate what we can achieve in a week, and under estimate what we can in a decade | Add little to little and you get a big pile | [It takes a Year](It%20takes%20a%20Year.md)
+#### The way you communicate with the world determines how the world interacts with you
 
-Or swap any week, decade with smol value/big value, respectively. This goes hand in hand with
+#### We overestimate what we can achieve in a week, and underestimate what we can in a decade | Add little to little and you get a big pile | [It takes a Year](It%20takes%20a%20Year.md)
 
-### Speeding Things Up Comes at a Cost peeding Things Up Comes at a Cos
+Or swap any week/decade with small value/big value, respectively. This goes hand in hand with
+
+### Speeding Things Up Comes at a Cost

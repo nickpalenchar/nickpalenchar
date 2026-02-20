@@ -81,7 +81,7 @@ export const aboutPageContent: AboutPageContent = {
     description: `
 I'm Nick Palenchar, a software developer and aerialist based in NYC. I've worked on the backend and infrastructure from early start-ups to large tech companies, and I currently work at <a href="https://atlassian.com">Atlassian</a>.
 <br/><br/>
-My extracurrucular time centers around health/fitness and local community building. I've previously been an organizer to one of <a href="https://www.nycpickleball.com/" target="_blank">NYC Pickleball's</a> biggest events in Brooklyn, and currently run a <a href="https://greenpointgame.club/" target="_blank">local board game club</a> in Greenpoint/Williamsburg.`,
+My extracurricular time centers around health/fitness and local community building. I've previously been an organizer to one of <a href="https://www.nycpickleball.com/" target="_blank">NYC Pickleball's</a> biggest events in Brooklyn, and currently run a <a href="https://greenpointgame.club/" target="_blank">local board game club</a> in Greenpoint/Williamsburg.`,
     image_l: {
       url: "/me.jpg",
       alt: "Left Picture",
