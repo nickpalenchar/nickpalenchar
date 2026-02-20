@@ -80,7 +80,7 @@ const { seo } = Astro.props;
                             navBarLinks.map((link) => (
                                 <li>
                                     <a
-                                        class="group px-4 py-2 rounded-lg hover:bg-gray-bg opacity-60 hover:opacity-100 transition-all"
+                                        class={`group px-4 py-2 rounded-lg hover:bg-gray-bg opacity-60 hover:opacity-100 transition-all ${link.url === "/cooking-corner" ? "cooking-nav-link" : ""}`}
                                         href={link.url}
                                         target={
                                             link.external ? "_blank" : "_self"
@@ -107,7 +107,7 @@ const { seo } = Astro.props;
                                     navBarLinks.map((link) => (
                                         <li>
                                             <a
-                                                class="block pl-4 py-3"
+                                                class={`block pl-4 py-3 ${link.url === "/cooking-corner" ? "cooking-nav-link" : ""}`}
                                                 href={link.url}
                                                 target={
                                                     link.external
@@ -183,6 +183,12 @@ const { seo } = Astro.props;
 
     .post:hover .hover-underline {
         text-decoration-color: rgba(255, 255, 255, 1);
+    }
+
+    .cooking-nav-link {
+        color: #fed7aa;
+        font-family: "Georgia", "Times New Roman", serif;
+        font-weight: 500;
     }
 
     .prose table {

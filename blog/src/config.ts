@@ -28,6 +28,10 @@ export const navBarLinks: NavBarLink[] = [
     title: "Projects",
     url: "/projects",
   },
+  {
+    title: "Cooking Corner",
+    url: "/cooking-corner",
+  },
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -180,4 +184,13 @@ export const blogPageContent: BlogPageContent = {
     image: identity.logo,
   },
   subtitle: "Thoughts, stories and ideas.",
+};
+
+export const cookingPageContent = {
+  seo: {
+    title: "Cooking Corner | Nick Palenchar",
+    description: "Diets, recipes, and practical cooking notes.",
+    image: identity.logo,
+  },
+  subtitle: "My own notes on healthy eating and better cooking, centered around my current dietary lifestyle (Vegan-forward)",
 };

@@ -10,6 +10,12 @@ draft: true
 
 Rather than hoarding a "Best Sh\*t" of blog post at the very end of the year like I usually do, I'm trying something new _
 
+## Things I liked
+
+📺 [My 5 simple steps to eat healthier in 2026](https://www.youtube.com/watch?v=qAqpihEKaXM) This year I started to really get conscious about [The Diet](The%20Diet.md)
+
+[How I ship Projects At Big Tech Companies](https://www.seangoedecke.com/how-to-ship/) - TODO tldr shipping is *hard* but it's also what we are paid for. The best strategy to thrive in your career is to have a ship-first mindset
+
 ## Things I'm adding
 
 justthebrowser.com - simple way to remove all "non-browser" features from Chorme/Firefox/Edge (adware, AI feature, etc).

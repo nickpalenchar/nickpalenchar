@@ -8,8 +8,6 @@ external: false
 draft: false
 ---
 
-These are my personal notes on the podcas [Jobs and the Deep Life (Cal Newport)](https://www.thedeeplife.com/podcasts/episodes/ep-320-jobs-and-the-deep-life/)
-
 ## 4 Paradoxes of Work
 
 ### \#1. The Passion Paradox
