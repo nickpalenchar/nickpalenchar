@@ -181,3 +181,12 @@ export const blogPageContent: BlogPageContent = {
   },
   subtitle: "Thoughts, stories and ideas.",
 };
+
+export const cookingPageContent: BlogPageContent = {
+  seo: {
+    title: "Cooking Corner | Nick Palenchar",
+    description: "Recipes and notes from the kitchen.",
+    image: identity.logo,
+  },
+  subtitle: "Recipes and notes from the kitchen.",
+};
