@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
+import { cookingPageContent } from "../../config";
+import FixedRotatedTitle from "../../components/FixedRotatedTitle.astro";
+
+const entries = await getCollection("posts", ({ data }) => {
+  console.log('posts', data)
+  return (
+    !data.draft &&
+    (data.tags || []).includes("collection/cooking-corner")
+  );
+});
+
+console.log({ entries })
+
+entries.sort((a, b) => {
+  const dateA = new Date(a.data.date).getTime();
+  const dateB = new Date(b.data.date).getTime();
+  return dateB - dateA;
+});
+
+for (const entry of entries) {
+  const { remarkPluginFrontmatter } = await render(entry);
+  entry.data.readingTime = remarkPluginFrontmatter.minutesRead;
+}
+---
+
+<Layout seo={cookingPageContent.seo}>
+  <FixedRotatedTitle title="Cooking Corner" />
+  <section class="mt-10 max-w-3xl mx-auto px-6 md:pl-20">
+    <h1 class="font-bold text-3xl mb-1 text-amber-200">Cooking Corner</h1>
+    <p class="opacity-80 mb-14 text-amber-100">
+      {cookingPageContent.subtitle}
+    </p>
+
+    <div class="grid grid-cols-1 gap-10 sm:gap-6 mb-10">
+      {
+        entries.map((entry) => (
+          <a
+            href={`/cooking-corner/${entry.id}`}
+            class="sm:flex sm:gap-6 post"
+          >
+            <div class="mt-4 sm:my-auto">
+              <p class="opacity-60 mb-2 text-amber-100">
+                {entry.data.date.toLocaleDateString()} ·{" "}
+                {entry.data.readingTime}
+              </p>
+              <h3 class="font-medium hover-underline text-amber-100">
+                {entry.data.title}
+              </h3>
+              <p class="text-sm opacity-70 mt-2 mb-3 text-amber-50">
+                {entry.data.description || ""}
+              </p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>
+

@@ -23,7 +23,7 @@ Simply put, most resumes with equal experience look the same. New bootcamp grads
 
 It's a start, but then I'm left with 5-10 resumes and 1-3 referrals I can comfortably make. At this point I could paste them to a wall and throw a dart. Or I could look at their GitHub.
 
-## Getting your Github ready without loosing sleep
+## Getting your Github ready without losing sleep
 
 You can easily increase your candidacy with an active GitHub but **you don't need to go crazy either**. Please don't [Eat-Sleep-Code-Repeat](https://medium.com/@iamtjah/eat-sleep-code-repeat-please-dont-f1453659d703). Simply doing bare minimum places you stratospherically above most others. So here's some simple ways to do just that:
 

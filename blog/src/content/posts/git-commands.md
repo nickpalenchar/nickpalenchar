@@ -28,7 +28,7 @@ origin  https://github.com/nickpalenchar/nickpalenchar.git (push)
 ```
 The location of where I ran this command is a repo that is linked to my `nickpalenchar` repository under my username (`nickpalenchar`). No recloning needed!
 
-### git commit --allow-empty -m 'your message...'
+### `git commit --allow-empty -m 'your message...'`
 
 Generally, when you try to commit when nothing is staged for doing so, you'll get a `nothing to commit, working tree clean` response, with no commit made. The `--allow-empty` flag bypasses this saftey check, allowing (you guessed it) an empty commit. So even when nothing is staged or changed, a commit will be written to the git log.
 
