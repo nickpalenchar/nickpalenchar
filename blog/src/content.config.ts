@@ -14,6 +14,7 @@ const postsCollection = defineCollection({
     draft: z.boolean().default(false).describe("Is this a draft?"),
     aliases: z.array(z.string()).optional().describe("URL aliases for this post"),
     readingTime: z.number().optional().describe("Estimated reading time in minutes"),
+    banner: z.string().optional().describe("Path to banner image (e.g. /banners/my-post.jpg). Recommended: 1200×630px JPEG under 300KB for broad social sharing."),
   }),
 });
 

@@ -21,7 +21,9 @@ export type Identity = {
 export type SEOInfo = {
   title: string;
   description: string;
-  image: string;
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export type HomePageContent = {
