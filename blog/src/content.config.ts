@@ -15,6 +15,8 @@ const postsCollection = defineCollection({
     aliases: z.array(z.string()).optional().describe("URL aliases for this post"),
     readingTime: z.number().optional().describe("Estimated reading time in minutes"),
     banner: z.string().optional().describe("Path to banner image (e.g. /banners/my-post.jpg). Recommended: 1200×630px JPEG under 300KB for broad social sharing."),
+    bannerAttribution: z.string().optional().describe("Credit text for the banner image, e.g. 'John Smith on Unsplash'"),
+    bannerAttributionUrl: z.string().optional().describe("URL the attribution text links to"),
   }),
 });
 
