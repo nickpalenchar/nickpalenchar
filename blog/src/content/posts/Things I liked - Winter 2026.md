@@ -6,6 +6,9 @@ tags:
 - blog
 external: false
 draft: false
+banner: /banners/will-o-St4qInZrYC4-unsplash.webp
+bannerAttribution: Will O on Unsplash
+bannerAttributionUrl: https://unsplash.com/@blnk_kanvas
 ---
 
 Rather than hoarding a "Best Sh\*t" of blog post at the very end of the year like I usually do, I'm trying something new: Documenting random things I've discovered on a quarterly basis. As with most things in my blog, we'll see if I actually continue doing this or not.
@@ -20,9 +23,9 @@ A few knots I've learned recently:
 * [Butterfly](https://www.animatedknots.com/alpine-butterfly-loop-knot)
 * [Sheet Bend](https://www.animatedknots.com/sheet-bend-knot)
 
-**📺 [My 5 simple steps to eat healthier in 2026](https://www.youtube.com/watch?v=qAqpihEKaXM)** This year I started to really get conscious about my Diet, specifically around cholesterol management. I've switched to a mostly vegan, whole-food based diet (to publish soon) and have gotten back into preparing most of my own meals. There's
+**📺 [My 5 simple steps to eat healthier in 2026](https://www.youtube.com/watch?v=qAqpihEKaXM)** This year I started to really get conscious about my Diet, specifically around cholesterol management. I've switched to a mostly vegan, whole-food based diet (to publish soon) and have gotten back into preparing most of my own meals.
 
-**[The Opt Out Project](https://www.optoutproject.net/the-cyber-cleanse-take-back-your-digital-footprint/)**  - Always a fan of Digital Minimalism and being mindful about the tech we consume. This site provides a lovely 21-day plan to disconnect with tech and reconnect with humanity. Each day provides an achievable but impactful goal (Such as "Secure your Email" or "Trash unwanted accounts")
+**[The Opt Out Project](https://www.optoutproject.net/the-cyber-cleanse-take-back-your-digital-footprint/)**  - Always a fan of Digital Minimalism and being mindful about the tech we consume. This site provides a lovely 21-day plan to disconnect with tech and reconnect with humanity. Each day provides an achievable yet impactful goal (such as "Secure your Email" or "Trash unwanted accounts")
 
 **[How I ship Projects At Big Tech Companies](https://www.seangoedecke.com/how-to-ship/)** - Anyone who works in big tech has experienced the frustration of needing to ship but not being able to. This article both is reassuring in that it's a reminder you're not alone in this plight, but also provides a great mindset into how to get things done anyway.
 

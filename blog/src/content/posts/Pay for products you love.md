@@ -8,6 +8,8 @@ external: false
 draft: true
 ---
 
+(pi post) here's the thing. If you don't pay for the product, you *are* the product.
+
 If you're as old as I am, you might remember the days of early Facebook. There were a few occasional "chain posts" that would circulate virally. One of the more common ones that used to come across my feed was a warning that Mark Zuckerberg would start charging for Facebook. My memory is hazy, but I think you had to share the post to "sign" a petition to keep Facebook free? Whatever it was, the posts spread pretty widely, with many users commenting about how they would never pay.
 
 I never thought Facebook was going to be a paid product, because we pay with something much more valuable, our data.

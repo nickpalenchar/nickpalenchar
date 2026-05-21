@@ -1,0 +1,19 @@
+---
+import { formatArchiveDate } from "../utils/post-age";
+
+interface Props {
+    date: Date;
+}
+
+const { date } = Astro.props;
+const formattedDate = formatArchiveDate(date);
+---
+
+<aside class="archived-callout" aria-label="Archive notice">
+    <p class="archived-callout-label">From the archive</p>
+    <p class="archived-callout-body">
+        This post was written for <strong>{formattedDate}</strong>. Read it as a
+        historical snapshot—facts, links, tools, and opinions may no longer
+        reflect the present.
+    </p>
+</aside>
