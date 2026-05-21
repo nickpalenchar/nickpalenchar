@@ -16,32 +16,37 @@ const files = fs
 
 let warnings = 0;
 
+function checkImage(filePath, label, file) {
+  if (!fs.existsSync(filePath)) {
+    console.warn(`⚠  ${label} not found: ${filePath} (in ${file})`);
+    warnings++;
+    return;
+  }
+  const { size } = fs.statSync(filePath);
+  if (size > WARN_BYTES) {
+    const kb = Math.round(size / 1024);
+    console.warn(`⚠  ${label} is ${kb}KB (limit 300KB for WhatsApp): ${filePath} (in ${file})`);
+    warnings++;
+  }
+}
+
 for (const file of files) {
   const content = fs.readFileSync(path.join(postsDir, file), "utf-8");
   const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
   if (!frontmatterMatch) continue;
 
-  const bannerMatch = frontmatterMatch[1].match(/^banner:\s*(.+)$/m);
+  const fm = frontmatterMatch[1];
+
+  const bannerMatch = fm.match(/^banner:\s*(.+)$/m);
   if (!bannerMatch) continue;
-
   const bannerPath = bannerMatch[1].trim().replace(/^['"]|['"]$/g, "");
-  if (!bannerPath) continue;
+  if (bannerPath) checkImage(path.join(publicDir, bannerPath), "banner", file);
 
-  const imagePath = path.join(publicDir, bannerPath);
-
-  if (!fs.existsSync(imagePath)) {
-    console.warn(`⚠  Banner not found: ${bannerPath} (in ${file})`);
-    warnings++;
-    continue;
-  }
-
-  const { size } = fs.statSync(imagePath);
-  if (size > WARN_BYTES) {
-    const kb = Math.round(size / 1024);
-    console.warn(
-      `⚠  Banner is ${kb}KB (limit 300KB for WhatsApp): ${bannerPath} (in ${file})`
-    );
-    warnings++;
+  // bannerOg is what social platforms actually fetch — check it for WhatsApp
+  const ogMatch = fm.match(/^bannerOg:\s*(.+)$/m);
+  if (ogMatch) {
+    const ogPath = ogMatch[1].trim().replace(/^['"]|['"]$/g, "");
+    if (ogPath) checkImage(path.join(publicDir, ogPath), "bannerOg", file);
   }
 }
 

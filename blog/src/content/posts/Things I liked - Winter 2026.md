@@ -9,6 +9,7 @@ draft: false
 banner: /banners/will-o-St4qInZrYC4-unsplash.webp
 bannerAttribution: Will O on Unsplash
 bannerAttributionUrl: https://unsplash.com/@blnk_kanvas
+bannerOg: /banners/will-o-St4qInZrYC4-unsplash.jpg
 ---
 
 Rather than hoarding a "Best Sh\*t" of blog post at the very end of the year like I usually do, I'm trying something new: Documenting random things I've discovered on a quarterly basis. As with most things in my blog, we'll see if I actually continue doing this or not.
