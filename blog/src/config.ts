@@ -25,6 +25,10 @@ export const navBarLinks: NavBarLink[] = [
     url: "/blog",
   },
   {
+    title: "Diet",
+    url: "/diet",
+  },
+  {
     title: "Projects",
     url: "/projects",
   },

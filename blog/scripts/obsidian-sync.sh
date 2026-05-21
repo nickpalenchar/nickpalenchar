@@ -21,9 +21,13 @@ OBSIDIAN_DIR=$HOME/Documents/journal/journal
 
 ls $OBSIDIAN_DIR/blog/
 
+node "$SCRIPT_DIR/merge-astro-frontmatter.js" snapshot
+
 obsidian-export $OBSIDIAN_DIR  ./src/content/posts/ \
   --start-at $OBSIDIAN_DIR/blog/ \
   --ignore-file $OBSIDIAN_DIR/blog/export-ignore.md
+
+node "$SCRIPT_DIR/merge-astro-frontmatter.js" merge
 
 while IFS= read -r -d '' img; do
   cp -f "$img" "$CONTENT_DIR/$(basename "$img")"

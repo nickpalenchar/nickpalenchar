@@ -18,6 +18,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# obsidian-sync temp file
+.frontmatter-snapshot.json
+
 # yarn
 .pnp.*
 .yarn/*

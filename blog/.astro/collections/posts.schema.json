@@ -66,6 +66,21 @@
           "description": "Estimated reading time in minutes",
           "markdownDescription": "Estimated reading time in minutes"
         },
+        "banner": {
+          "type": "string",
+          "description": "Path to banner image (e.g. /banners/my-post.jpg). Recommended: 1200×630px JPEG under 300KB for broad social sharing.",
+          "markdownDescription": "Path to banner image (e.g. /banners/my-post.jpg). Recommended: 1200×630px JPEG under 300KB for broad social sharing."
+        },
+        "bannerAttribution": {
+          "type": "string",
+          "description": "Credit text for the banner image, e.g. 'John Smith on Unsplash'",
+          "markdownDescription": "Credit text for the banner image, e.g. 'John Smith on Unsplash'"
+        },
+        "bannerAttributionUrl": {
+          "type": "string",
+          "description": "URL the attribution text links to",
+          "markdownDescription": "URL the attribution text links to"
+        },
         "$schema": {
           "type": "string"
         }
