@@ -38,22 +38,45 @@ const isArchived = isArchivedPost(entry.data.date);
         imageHeight: entry.data.banner ? 630 : undefined,
     }}
 >
-    <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-    />
-    <LibraryReadingStyles />
+    {
+        isArchived && (
+            <>
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+                />
+                <LibraryReadingStyles />
+            </>
+        )
+    }
 
     <FixedRotatedTitle title="Blog" />
 
-    <section class="mt-10 w-full max-w-4xl mx-auto px-0 sm:px-6 md:pl-20">
-        <div class="library-reading">
-            <h1 class="library-title font-bold text-3xl mb-4">
+    <section
+        class:list={[
+            "mt-10 mx-auto",
+            isArchived
+                ? "w-full max-w-4xl px-0 sm:px-6 md:pl-20"
+                : "max-w-3xl px-6 md:pl-20",
+        ]}
+    >
+        <div class:list={[{ "library-reading": isArchived }]}>
+            <h1
+                class:list={[
+                    "font-bold text-3xl mb-4",
+                    { "library-title": isArchived },
+                ]}
+            >
                 {entry.data.title}
             </h1>
             {
                 entry.data.description && (
-                    <p class="library-muted opacity-60 mb-6">
+                    <p
+                        class:list={[
+                            "opacity-60 mb-6",
+                            { "library-muted": isArchived },
+                        ]}
+                    >
                         {entry.data.description}
                     </p>
                 )
@@ -64,11 +87,26 @@ const isArchived = isArchivedPost(entry.data.date);
                     alt={identity.name}
                     width={40}
                     height={40}
-                    class="w-[40px] aspect-square object-cover rounded-full ring-1 ring-[rgba(58,50,40,0.2)]"
+                    class:list={[
+                        "w-[40px] aspect-square object-cover rounded-full",
+                        isArchived && "ring-1 ring-[rgba(58,50,40,0.2)]",
+                    ]}
                 />
                 <div>
-                    <p class="library-meta-name font-medium">{identity.name}</p>
-                    <p class="library-muted opacity-60">
+                    <p
+                        class:list={[
+                            "font-medium",
+                            { "library-meta-name": isArchived },
+                        ]}
+                    >
+                        {identity.name}
+                    </p>
+                    <p
+                        class:list={[
+                            "opacity-60",
+                            { "library-muted": isArchived },
+                        ]}
+                    >
                         {entry.data.date.toLocaleDateString()} · {
                             remarkPluginFrontmatter.minutesRead
                         }
@@ -78,14 +116,33 @@ const isArchived = isArchivedPost(entry.data.date);
 
             {
                 entry.data.banner && (
-                    <div class="library-banner-wrap relative h-56 sm:h-64 md:h-72 overflow-hidden mb-8">
+                    <div
+                        class:list={[
+                            "relative h-56 sm:h-64 md:h-72 overflow-hidden mb-8",
+                            { "library-banner-wrap": isArchived },
+                        ]}
+                    >
                         <img
                             src={entry.data.banner}
                             alt=""
                             class="w-full h-full object-cover object-center"
                         />
+                        {!isArchived && (
+                            <>
+                                <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black to-transparent pointer-events-none" />
+                                <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-black pointer-events-none" />
+                            </>
+                        )}
                         {entry.data.bannerAttribution && (
-                            <p class="library-banner-attribution absolute bottom-2 right-3 text-[11px] opacity-50 hover:opacity-90 transition-opacity">
+                            <p
+                                class:list={[
+                                    "absolute bottom-2 right-3 text-[11px] opacity-50 hover:opacity-90 transition-opacity",
+                                    {
+                                        "library-banner-attribution":
+                                            isArchived,
+                                    },
+                                ]}
+                            >
                                 {entry.data.bannerAttributionUrl ? (
                                     <a
                                         href={entry.data.bannerAttributionUrl}
@@ -106,7 +163,12 @@ const isArchived = isArchivedPost(entry.data.date);
             {isArchived && <ArchivedPostCallout date={entry.data.date} />}
 
             <article
-                class="library-prose prose max-w-none prose-a:underline-offset-4 prose-headings:mb-2"
+                class:list={[
+                    "prose prose-a:underline-offset-4 prose-headings:mb-2 max-w-none",
+                    isArchived
+                        ? "library-prose"
+                        : "prose-invert prose-a:text-blue-300 prose-p:text-[#e5e5e5]",
+                ]}
             >
                 <Content />
             </article>
